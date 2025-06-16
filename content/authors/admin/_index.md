@@ -157,7 +157,7 @@ project:
   - position: "Increasing Brand Trust in Cross-country Brands"
     institution: Peking University
     supervisor: Dr. Yan Han
-    date_start: 2021-07-01
+    date_start: 2021-06-01
     date_end: 2021-07-01
     summary: |2-
       - Conducted literature research on brand trust in fields of economy, psychology, sociology, and management.
