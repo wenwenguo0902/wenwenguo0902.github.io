@@ -9,7 +9,8 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: resume-biography-3
+  - block: bio
+    id: bio
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
@@ -103,12 +104,19 @@ sections:
   #     spacing:
   #       padding: [0, 0, 0, 0]
 
-  - block: resume-experience
+  - block: edu
+    id: edu
     content:
       username: admin
     design:
       # Hugo date format
       date_format: 'January 2006'
       # Education or Experience section first?
-      is_education_first: false
+  - block: work
+    id: work
+    content:
+      username: admin
+    design:
+      # Hugo date format
+      date_format: 'January 2006'
 ---
