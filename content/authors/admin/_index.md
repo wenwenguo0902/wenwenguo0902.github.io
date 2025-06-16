@@ -78,7 +78,7 @@ education:
       - Content Analysis (7.4)
       - Survey Design (7.2)
       - Experimentation in the Social Sciences (7.4)
-  - area: BA Advertisement
+  - area: BA Advertising
     institution: Peking University
     date_start: 2018-09-01
     date_end: 2022-06-01
@@ -108,6 +108,61 @@ education:
       - Intermediate Macroeconomics
       - Intermediate Microeconomics
       - Financial Accounting
+
+project:
+  - position: "Research Assistant | Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies"
+    institution: Amsterdam School of Communication Research / ASCoR
+    url: https://www.nwo.nl/en/projects/vividi211101
+    date_start: 2023-09-01
+    date_end: ''
+    supervisor: Dr. M. (Mark) Boukes
+    summary: |2-
+      - Conducted literature review, pre-registration, experiment stimuli and scale designs to determine journalist strategies to restore trust.
+      - Coordinated with fellow ASCoR members and scholars from over 32 countries to distribute the questionnaire and conduct the experiment.
+      - The research proposal has been presented on ICA24 and Etmaal 2024, and awarded with the Top Extended Abstract Award in ICA24.
+      - Key Methods: Experiment, Survey, R, SPSS
+  - position: "Research Assistant | Dissecting Digital Natives’ Political Preferences: Election Campaigns and YouTube Media Exposure"
+    institution: Amsterdam School of Communication Research / ASCoR
+    date_start: 2024-04-01
+    date_end: 2025-01-01
+    supervisor: Dr. F. (Felicia) Loecherbach
+    summary: |2-
+      - Performed YouTube video analyses, including scraping metadata, automated text analysis and topic classification.
+      - Results are presented in the ODISSEI conference and IC2S2.
+      - Key Methods: Automated Content Analysis, Data Donation, NLP, Supervised Machine Learning, Survey, Python, SPSS
+  - position: "Research Assistant | Mapping the Collective Wisdom of Online Rare Disease Communities: a Patient-Driven Algorithm"
+    institution: Amsterdam School of Communication Research / ASCoR
+    url: https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-der-maatschappij-en-gedragswetenschappen/news/2025/05/facebook-rare-diseases.html 
+    date_start: 2024-09-01
+    date_end: ''
+    supervisor: Dr. A.J. (Annemiek) Linn
+    summary: |2-
+      - Conducted systematic content analysis on rare disease communities social media data to develop an open-source algorithm.
+      - Collaborated with a multidisciplinary research team to interpret findings and generate insights.
+      - Key Methods: Content Analysis, Data Donation, Interview
+  - position: "Coding Assistant"
+    institution: Digicomlab, ASCoR
+    date_start: 2024-05-01
+    date_end: 2024-05-01
+    summary: |2-
+      - Provided manual content analysis coding on political outgroup representations and evaluations for YouTube Comments.
+      - Grant Number: TF.24.0
+  - position: "Coding Assistant"
+    institution: Digicomlab, ASCoR
+    date_start: 2023-05-01
+    date_end: 2023-05-01
+    summary: |2-
+      - Coded on the topic of Feminism perceptions and actions on Chinese social media (Weibo Posts).
+      - Project Number: R2522.0025    
+  - position: "Increasing Brand Trust in Cross-country Brands"
+    institution: Peking University
+    supervisor: Dr. Yan Han
+    date_start: 2021-07-01
+    date_end: 2021-07-01
+    summary: |2-
+      - Conducted literature research on brand trust in fields of economy, psychology, sociology, and management.
+      - Approached brand trust under Hess’s Ternary Brand Trust Theory and summarized factors and tactics to building brand trust.   
+
 work:
   - position: Product Manager , Corporate Development Group (CDG) 
     company_name: Tencent

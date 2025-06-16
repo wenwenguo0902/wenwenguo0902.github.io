@@ -112,6 +112,14 @@ sections:
       # Hugo date format
       date_format: 'January 2006'
       # Education or Experience section first?
+  - block: proj
+    id: proj
+    content:
+      username: admin
+    design:
+      # Hugo date format
+      date_format: 'January 2006'
+  
   - block: work
     id: work
     content:
