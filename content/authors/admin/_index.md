@@ -221,4 +221,4 @@ awards:
 
 ## About Me
 
-Wenwen Guo is an incoming PhD student at the School of Journalism and Communication, TsingHua University, supervised by professor Qing'an Zhou. She strives to leverage data-driven, quantitative methods to answer social inequality problems on a global scale.
+Wenwen Guo is an incoming PhD student at the School of Journalism and Communication, TsingHua University, supervised by Professor Qing'an Zhou. She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale.
