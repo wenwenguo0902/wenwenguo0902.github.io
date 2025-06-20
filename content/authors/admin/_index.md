@@ -3,7 +3,7 @@
 title: 郭雯雯
 
 # Name pronunciation (optional)
-name_pronunciation: Guo Wenwen
+name_pronunciation: Wenwen Guo
 
 # Full name (for SEO)
 first_name: Wenwen
@@ -99,7 +99,7 @@ education:
       - Scholarship by People’s Daily Online (1/95)
   - area: BE Economics
     institution: Peking University
-    date_start: 2018-09-01
+    date_start: 2019-09-01
     date_end: 2022-06-01
     summary: |
 
@@ -164,7 +164,7 @@ project:
       - Approached brand trust under Hess’s Ternary Brand Trust Theory and summarized factors and tactics to building brand trust.   
 
 work:
-  - position: Product Manager , Corporate Development Group (CDG) 
+  - position: Product Manager, Corporate Development Group (CDG) 
     company_name: Tencent
     company_url: 'https://www.tencent.com'
     company_logo: ''
@@ -182,7 +182,7 @@ work:
     summary: |
       - Conducted influencer marketing to drive user generation and content promotion.
       - Reviewed over 1,000 advertising videos in more than 8 languages, ensuring compliance with regional policies and ad effectiveness.
-  - position: Integrated Marketing Communications， JD Home Appliances 
+  - position: Integrated Marketing Communications, JD Home Appliances 
     company_name: JD
     company_url: 'https://www.jd.com'
     company_logo: ''
