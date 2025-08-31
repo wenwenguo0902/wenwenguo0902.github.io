@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Incoming PhD Student
+role: PhD Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -143,14 +143,14 @@ project:
   - position: "Coding Assistant"
     institution: Digicomlab, ASCoR
     date_start: 2024-05-01
-    date_end: 2024-05-01
+    date_end: 2024-06-01
     summary: |2-
       - Provided manual content analysis coding on political outgroup representations and evaluations for YouTube Comments.
       - Grant Number: TF.24.0
   - position: "Coding Assistant"
     institution: Digicomlab, ASCoR
     date_start: 2023-05-01
-    date_end: 2023-05-01
+    date_end: 2023-06-01
     summary: |2-
       - Coded on the topic of Feminism perceptions and actions on Chinese social media (Weibo Posts).
       - Project Number: R2522.0025    
