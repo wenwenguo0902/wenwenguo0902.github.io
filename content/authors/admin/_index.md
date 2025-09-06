@@ -70,7 +70,7 @@ education:
     summary: |
       GPA: 7.74/10.0
       - Courses included:
-        Big Data & Automated Content Analysis, Part I & II (8.0); Using R for Data Wrangling, Analysis and Visualization (9.0); Structural Equation Modeling (7.7); Shaping Society: How Organisations and the Media Influence Public Issues (8.2); Content Analysis (7.4); Survey Design (7.2); Experimentation in the Social Sciences (7.4)
+        - Big Data & Automated Content Analysis, Part I & II (8.0); Using R for Data Wrangling, Analysis and Visualization (9.0); Structural Equation Modeling (7.7); Shaping Society: How Organisations and the Media Influence Public Issues (8.2); Content Analysis (7.4); Survey Design (7.2); Experimentation in the Social Sciences (7.4)
   - area: BA Advertising
     institution: Peking University
     date_start: 2018-09-01
@@ -78,18 +78,18 @@ education:
     summary: |
       GPA: 3.75/4.0
       - Courses included:
-        Introduction to New Media (95); Advertising Media Studies (93); Visual Communication (97); English News Reading (96)
+        - Introduction to New Media (95); Advertising Media Studies (93); Visual Communication (97); English News Reading (96)
       - Awards included:
-        Excellent Graduate of Peking University (2022, top 5%);
-        Merit Student of Peking University (2021, top 10%); The Third Prize of Peking University Scholarship (2021, top 5%);
-        Award for Scientific Research (top 10%); Award for Contribution in Student Organizations (top 10%); Scholarship by People’s Daily Online (1/95); Outstanding Contribution for the 2022 Beijing Winter Olympics and Paralympics of Peking University
+        - Excellent Graduate of Peking University (2022, top 5%);
+        - Merit Student of Peking University (2021, top 10%); The Third Prize of Peking University Scholarship (2021, top 5%);
+        - Award for Scientific Research (top 10%); Award for Contribution in Student Organizations (top 10%); Scholarship by People’s Daily Online (1/95); Outstanding Contribution for the 2022 Beijing Winter Olympics and Paralympics of Peking University
   - area: BE Economics
     institution: Peking University
     date_start: 2019-09-01
     date_end: 2022-06-01
     summary: |
       - Courses included:
-        Econometrics; Intermediate Macroeconomics; Intermediate Microeconomics; Financial Accounting; Macroeconomy and Health
+        - Econometrics; Intermediate Macroeconomics; Intermediate Microeconomics; Financial Accounting; Macroeconomy and Health
 
 project:
   - position: "Research Assistant | Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies"
@@ -101,7 +101,7 @@ project:
     summary: |2-
       - Conducted literature review, pre-registration, experiment stimuli and scale designs to determine journalist strategies to restore trust.
       - Coordinated with fellow ASCoR members and scholars from over 32 countries to distribute the questionnaire and conduct the experiment.
-      - The research proposal has been presented on ICA24 and Etmaal 2024, and awarded with the Top Extended Abstract Award in ICA24.
+      - The research proposal has been presented on ICA24 (Top Extended Abstract Award), Etmaal 2024, and ECREA24.
       - Key Methods: Experiment, Survey, R, SPSS
   - position: "Research Assistant | Dissecting Digital Natives’ Political Preferences: Election Campaigns and YouTube Media Exposure"
     institution: Amsterdam School of Communication Research / ASCoR
@@ -134,7 +134,7 @@ project:
     date_start: 2023-05-01
     date_end: 2023-06-01
     summary: |2-
-      - Coded on the topic of Feminism perceptions and actions on Chinese social media (Weibo Posts); Project Number: R2522.0025
+      - Coded on the topic of Feminism perceptions and actions on Chinese social media (Weibo Posts). Project Number: R2522.0025
       - Key Methods: Content Analysis, Qualtrics
   - position: "Increasing Brand Trust in Cross-country Brands"
     institution: Peking University
@@ -258,4 +258,4 @@ awards:
 
 ## About Me
 
-Wenwen Guo is a PhD student at the School of Journalism and Communication, TsingHua University, supervised by Professor Qing'an Zhou. She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale.
+Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by Professor Qing'an Zhou. She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale.
