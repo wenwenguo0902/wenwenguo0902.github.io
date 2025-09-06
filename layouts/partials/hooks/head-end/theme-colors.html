@@ -1,0 +1,71 @@
+<style>
+  /* === Soft Champagne Beige theme (subtle, elegant, not flashy) === */
+  :root{
+    --brand:#D1A98C;       /* champagne beige for accents */
+    --brand-weak:#F1DEC9;  /* pale beige for ripples/soft hovers */
+    --surface:#FFFAF5;     /* warm off-white page background */
+    --surface-alt:#FFFFFF; /* cards */
+    --border:#EFE6DA;      /* hairline beige border */
+    --text:#111827;        /* readable near-black */
+    --muted:#6B7280;       /* neutral gray for meta text */
+    --accent-strength: 0.08; /* page glow strength (lower = subtler) */
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --brand:#E6C4A8;      /* slightly brighter champagne */
+      --brand-weak:#F3E2D4;
+      --surface:#0F0E0C;    /* warm near-black */
+      --surface-alt:#151311;/* card in dark */
+      --border:#29241F;     /* dark border */
+      --text:#EDE9E4;       /* warm light text */
+      --muted:#B8ACA0;      /* warm gray */
+      --accent-strength: 0.10;
+    }
+  }
+
+  /* Base surfaces + ultra-subtle top glow */
+  html, body{ background: var(--surface); color: var(--text); }
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:-1;
+    background: radial-gradient(1200px 420px at 50% -220px,
+      color-mix(in srgb, var(--brand) calc(var(--accent-strength)*100%), transparent), transparent 70%);
+    opacity:.55;
+  }
+
+  /* Cards (apply class="section-card" to your section wrappers) */
+  .section-card{
+    background: var(--surface-alt);
+    border:1px solid var(--border);
+    border-radius:1rem;
+    box-shadow:0 8px 24px rgba(17,24,39,.05);
+    padding:1.5rem;
+  }
+  @media (min-width:1024px){ .section-card{ padding:2rem; } }
+  .dark .section-card{ box-shadow:0 12px 32px rgba(0,0,0,.35); }
+
+  /* Section title accent line (class="section-title" on your H3) */
+  .section-title{ position:relative; }
+  .section-title::after{
+    content:""; display:block; height:3px; margin-top:.5rem;
+    background: linear-gradient(90deg, var(--brand), transparent);
+    width:50%;
+  }
+
+  /* Integrations with your existing interactions */
+  .prose a{ color: inherit; }
+  .prose a:hover{ color: var(--brand); }
+  .gradient-underline,
+  .prose a{ background-image: linear-gradient(var(--brand), var(--brand)); } /* soft beige underline */
+  .border-s{ border-color: var(--border) !important; }
+  .tl-dot::after{ box-shadow: 0 0 0 0 color-mix(in srgb, var(--brand) 30%, transparent); }
+
+  /* Buttons (works with the .btn-cta class you added) */
+  .btn-cta{ background-image: linear-gradient(180deg,#fff,#f9fafb); border:1px solid var(--border); }
+  .btn-cta:hover{
+    border-color: color-mix(in srgb, var(--brand) 55%, var(--border));
+    box-shadow:0 6px 16px rgba(209,169,140,.18);
+  }
+  .btn-cta:focus-visible{
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 60%, transparent);
+  }
+</style>
