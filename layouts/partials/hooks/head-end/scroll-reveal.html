@@ -1,0 +1,51 @@
+<style>
+  /* ===== Base reveal behavior ===== */
+  .reveal{ opacity:0; transform: translateY(16px); will-change: opacity, transform; }
+  .reveal.is-visible{ opacity:1; transform:none; transition: opacity .6s ease-out, transform .6s ease-out; }
+
+  /* Child items (for staggered lists) */
+  .reveal .reveal-item{ opacity:0; transform: translateY(12px); }
+  .reveal.is-visible .reveal-item{ opacity:1; transform:none; transition: opacity .55s ease-out, transform .55s ease-out; }
+
+  /* Stagger: delay per child = --stagger-step * --i (set --i inline) */
+  .reveal[data-stagger] .reveal-item{
+    transition-delay: calc(var(--stagger-step, 90ms) * var(--i, 0));
+  }
+
+  /* Effect variants (set with data-reveal="…") */
+  .reveal[data-reveal="fade"]{ transform:none; }
+  .reveal[data-reveal="fade-left"]{ transform: translateX(-20px); }
+  .reveal[data-reveal="fade-right"]{ transform: translateX(20px); }
+  .reveal[data-reveal="zoom-in"]{ transform: scale(.98); transform-origin: center; }
+  .reveal[data-reveal="wipe"]{ transform:none; clip-path: inset(0 0 100% 0); }
+  .reveal.is-visible[data-reveal="wipe"]{
+    clip-path: inset(0 0 0 0); transition: clip-path .7s ease-out;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal .reveal-item{
+      transition: none !important; transform: none !important; opacity: 1 !important;
+    }
+  }
+</style>
+
+<script>
+  // Scroll-reveal: mark .reveal when it enters the viewport
+  (function(){
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting){
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target); // reveal once
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+    els.forEach(el => io.observe(el));
+  })();
+</script>
