@@ -1,10 +1,10 @@
 <style>
   /* === A. Site-wide smaller prose body text === */
   /* Make body text (p, li) inside .prose slightly smaller while keeping headings larger */
-  .prose { font-size: inherit; line-height: 1.6; }
+  .prose { font-size: .92rem; line-height: 1.6; }
   .prose :where(p, li) { font-size: inherit; line-height: inherit; }
   @media (min-width: 1024px){
-    .prose { font-size: inherit; }
+    .prose { font-size: .95rem; }
   }
 
   /* === B. Tighter spacing for paragraphs/lists === */
@@ -17,7 +17,7 @@
   
   /* Wider layout for resume-like blocks: make .max-w-prose wider on large screens */
   @media (min-width: 1024px){
-    .max-w-prose{ max-width: 75ch; } 
+    .max-w-prose{ max-width: 90ch; } 
   }
   
 </style>
