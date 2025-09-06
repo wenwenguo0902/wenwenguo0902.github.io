@@ -73,6 +73,8 @@ education:
         - Big Data & Automated Content Analysis, Part I & II (8.0); Using R for Data Wrangling, Analysis and Visualization (9.0);
         - Structural Equation Modeling (7.7); Shaping Society: How Organisations and the Media Influence Public Issues (8.2);
         - Content Analysis (7.4); Survey Design (7.2); Experimentation in the Social Sciences (7.4)
+      - Thesis:
+        - Framing Disability in Paralympic News Coverage: A Cross-National Ternary Framing Analysis and the Impact of Time and Host Status (2012-2024); Supervisor: Dr. A. C. (Anne) Kroon; presented in Etmaal 2025
   - area: BA Advertising
     institution: Peking University
     date_start: 2018-09-01
