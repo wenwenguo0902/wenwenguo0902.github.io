@@ -70,7 +70,9 @@ education:
     summary: |
       GPA: 7.74/10.0
       - Courses included:
-        - Big Data & Automated Content Analysis, Part I & II (8.0); Using R for Data Wrangling, Analysis and Visualization (9.0); Structural Equation Modeling (7.7); Shaping Society: How Organisations and the Media Influence Public Issues (8.2); Content Analysis (7.4); Survey Design (7.2); Experimentation in the Social Sciences (7.4)
+        - Big Data & Automated Content Analysis, Part I & II (8.0); Using R for Data Wrangling, Analysis and Visualization (9.0);
+        - Structural Equation Modeling (7.7); Shaping Society: How Organisations and the Media Influence Public Issues (8.2);
+        - Content Analysis (7.4); Survey Design (7.2); Experimentation in the Social Sciences (7.4)
   - area: BA Advertising
     institution: Peking University
     date_start: 2018-09-01
@@ -89,7 +91,8 @@ education:
     date_end: 2022-06-01
     summary: |
       - Courses included:
-        - Econometrics; Intermediate Macroeconomics; Intermediate Microeconomics; Financial Accounting; Macroeconomy and Health
+        - Econometrics; Probability and Statistics; Financial Accounting;
+        - Intermediate Macroeconomics; Intermediate Microeconomics; Macroeconomy and Health; International Trade
 
 project:
   - position: "Research Assistant | Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies"
@@ -127,14 +130,14 @@ project:
     date_start: 2024-05-01
     date_end: 2024-06-01
     summary: |2-
-      - Provided manual content analysis coding on political outgroup representations and evaluations for YouTube Comments; Grant Number: TF.24.0
+      - Provided manual content analysis coding on political outgroup representations and evaluations for YouTube Comments.
       - Key Methods: Content Analysis, Web Scraping
   - position: "Coding Assistant"
     institution: Digicomlab, ASCoR
     date_start: 2023-05-01
     date_end: 2023-06-01
     summary: |2-
-      - Coded on the topic of Feminism perceptions and actions on Chinese social media (Weibo Posts). Project Number: R2522.0025
+      - Coded on the topic of Feminism perceptions and actions on Chinese social media (Weibo Posts).
       - Key Methods: Content Analysis, Qualtrics
   - position: "Increasing Brand Trust in Cross-country Brands"
     institution: Peking University
@@ -143,7 +146,8 @@ project:
     date_end: 2021-07-01
     summary: |2-
       - Conducted literature research on brand trust in fields of economy, psychology, sociology, and management.
-      - Approached brand trust under Hess’s Ternary Brand Trust Theory and summarized factors and tactics to building brand trust.   
+      - Approached brand trust under Hess’s Ternary Brand Trust Theory and summarized factors and tactics to building brand trust.
+      - Key Methods: Literature Review
 
 work:
   - position: Product Manager, Corporate Development Group (CDG) 
