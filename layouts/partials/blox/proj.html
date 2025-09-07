@@ -34,21 +34,15 @@
     <li class="mb-10 ms-6">
         <span 
           class="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900"
-          style="background-color: var(--brand-weak); outline: 8px solid var(--surface);">
+          style="background-color: var(--brand-weak); outline: 0px solid var(--surface);">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-primary-800 dark:text-primary-300" style="color: var(--text);">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
 </svg>
             <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-5 h-5 text-primary-800 dark:text-primary-300"><path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"></path></svg> -->
         </span>
-      <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white text-wrap">
-        {{ if .url }}
-          <a class="gradient-underline hover:text-primary-800" href="{{.url}}">
-            {{.position}}
-          </a>
-        {{ else }}
-          {{.position}}
-        {{ end }}
+      <h3 class="flex prose items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white text-wrap">
+        {{.position | $page.RenderString}}
         <!--          <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span>-->
       </h3>
       <span class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">{{.institution}}</span>
@@ -63,7 +57,9 @@
         {{end}}
       </time>
       {{if .supervisor}}
-      <span class="block mb-2 text-sm italic font-normal leading-none text-gray-500 dark:text-gray-300">Supervisor: {{.supervisor}}</span>
+        <span class="block prose mb-2 text-sm italic font-normal leading-none text-gray-500 dark:text-gray-300">
+          Supervisor: {{.supervisor | $page.RenderString}}
+        </span>
       {{end}}
       <div class="mb-4 text-sm font-normal text-gray-500 dark:text-gray-300 text-wrap prose prose-sm prose-slate dark:prose-invert max-w-none">{{.summary | $page.RenderString}}</div>
 

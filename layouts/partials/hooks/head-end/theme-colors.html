@@ -23,6 +23,23 @@
     }
   }
 
+  /* hover color */
+  .nav-link:hover {
+    color: var(--brand);
+  }
+
+  :is(.dark .nav-link:hover) {
+    color: var(--brand);
+  }
+
+  .hover\:text-primary-700:hover {
+    color: var(--brand);
+  }
+
+  #site-header.header {
+    background-color: var(--surface);
+  }
+
   /* Base surfaces + ultra-subtle top glow */
   html, body{ background: var(--surface); color: var(--text); }
   body::before{

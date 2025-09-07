@@ -1,0 +1,114 @@
+<style>
+  /* =========================
+     LIQUID ETHER 背景（柔和流动光斑）
+     颜色来自主题变量：--brand / --brand-weak / --surface
+     ========================= */
+  body::after{
+    content:"";
+    position: fixed;
+    inset: -12% -30%;
+    z-index: -2;                 /* 在顶光晕(body::before)之下 */
+    pointer-events: none;
+    background:
+      radial-gradient(40% 50% at 10% 22%,
+        color-mix(in srgb, var(--brand-weak) 60%, transparent), transparent 62%),
+      radial-gradient(36% 46% at 88% 28%,
+        color-mix(in srgb, var(--brand) 18%, transparent), transparent 66%),
+      radial-gradient(52% 60% at 42% 82%,
+        color-mix(in srgb, var(--brand) 14%, transparent), transparent 62%);
+    filter: blur(42px) saturate(108%);
+    opacity: var(--ether-opacity, .30);  /* 强度：0.20 ~ 0.45 */
+    animation: ether-move 18s ease-in-out infinite alternate;
+  }
+  @keyframes ether-move{
+    0%   { transform: translate3d(-2%, 0, 0)   scale(1.02); }
+    50%  { transform: translate3d( 1%, -1%, 0) scale(1.03); }
+    100% { transform: translate3d( 3%,  2%, 0) scale(1.01); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    body::after{ animation: none; }
+  }
+
+  /* =========================
+     CLICK SPARK 点击火花（8 个小圆点散开）
+     可配：--spark-size/--duration 等；默认按你的截图
+     ========================= */
+  .spark{
+    position: fixed;
+    left: var(--x);               /* 传入像素值 */
+    top: var(--y);
+    width: var(--spark-size, 12px);
+    height: var(--spark-size, 12px);
+    border-radius: 9999px;
+    background: var(--brand);     /* 小圆颜色 = 主色 */
+    box-shadow:
+      inset 0 0 0 2px var(--surface-alt),  /* 内圈淡色描边，和卡片色一致 */
+      0 2px 6px rgba(0,0,0,.18);
+    transform: translate(-50%, -50%) scale(var(--extra-scale, 1));
+    pointer-events: none;
+    opacity: 0;
+    animation: spark-fly var(--duration, 400ms) ease-out forwards;
+  }
+  @keyframes spark-fly{
+    0%{
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(var(--extra-scale, 1));
+    }
+    100%{
+      opacity: 0;
+      transform:
+        translate(calc(-50% + var(--dx)), calc(-50% + var(--dy)))
+        scale(.7);
+    }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .spark{ display:none !important; }
+  }
+</style>
+
+<script>
+/* =========================
+   Click Spark 配置（按截图）
+   ========================= */
+(function(){
+  const cfg = {
+    size: 8,        // Spark Size
+    radius: 30,      // Spark Radius
+    count: 8,        // Spark Count
+    duration: 400,   // Duration (ms)
+    extraScale: 1,   // Extra Scale
+  };
+
+  // 移动端稍微收敛（可取消）
+  const isMobile = matchMedia('(max-width: 640px)').matches;
+  const COUNT = isMobile ? Math.max(5, Math.floor(cfg.count * .8)) : cfg.count;
+
+  // 无动画偏好：直接返回
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  // 全站点击触发；若只想在按钮/链接上触发，把选择器改成 'a,button,[data-spark]'
+  document.addEventListener('click', function(e){
+    if (e.button !== 0) return; // 只响应左键
+    const x = e.clientX, y = e.clientY;
+
+    for (let i = 0; i < COUNT; i++){
+      const angle = (i / COUNT) * Math.PI * 2;
+      const dx = Math.cos(angle) * cfg.radius;
+      const dy = Math.sin(angle) * cfg.radius;
+
+      const el = document.createElement('span');
+      el.className = 'spark';
+      el.style.setProperty('--x', x + 'px');
+      el.style.setProperty('--y', y + 'px');
+      el.style.setProperty('--dx', dx + 'px');
+      el.style.setProperty('--dy', dy + 'px');
+      el.style.setProperty('--spark-size', cfg.size + 'px');
+      el.style.setProperty('--duration', cfg.duration + 'ms');
+      el.style.setProperty('--extra-scale', cfg.extraScale);
+
+      document.body.appendChild(el);
+      el.addEventListener('animationend', () => el.remove());
+    }
+  }, { passive: true });
+})();
+</script>

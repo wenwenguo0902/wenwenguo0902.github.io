@@ -74,7 +74,7 @@ education:
         - Structural Equation Modeling (7.7); Shaping Society: How Organisations and the Media Influence Public Issues (8.2);
         - Content Analysis (7.4); Survey Design (7.2); Experimentation in the Social Sciences (7.4)
       - Thesis:
-        - Framing Disability in Paralympic News Coverage: A Cross-National Ternary Framing Analysis and the Impact of Time and Host Status (2012-2024); Supervisor: Dr. A. C. (Anne) Kroon; presented in Etmaal 2025
+        - Framing Disability in Paralympic News Coverage: A Cross-National Ternary Framing Analysis and the Impact of Time and Host Status (2012-2024); Supervisor: [Dr. A. C. (Anne) Kroon](https://www.uva.nl/en/profile/k/r/a.c.kroon/a.c.kroon.html); presented in Etmaal 2025
   - area: BA Advertising
     institution: Peking University
     date_start: 2018-09-01
@@ -97,36 +97,39 @@ education:
         - Intermediate Macroeconomics; Intermediate Microeconomics; Macroeconomy and Health; International Trade
 
 project:
-  - position: "Research Assistant | Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies"
+  - position: "[Research Assistant | Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies](https://www.nwo.nl/en/projects/vividi211101)"
     institution: Amsterdam School of Communication Research / ASCoR
     url: https://www.nwo.nl/en/projects/vividi211101
     date_start: 2023-09-01
     date_end: ''
-    supervisor: Dr. M. (Mark) Boukes
+    supervisor: "[Dr. M. (Mark) Boukes](https://www.uva.nl/en/profile/b/o/m.boukes/m.boukes.html)"
+    supervisor_url: https://www.uva.nl/en/profile/b/o/m.boukes/m.boukes.html
     summary: |2-
       - Conducted literature review, pre-registration, experiment stimuli and scale designs to determine journalist strategies to restore trust.
       - Coordinated with fellow ASCoR members and scholars from over 32 countries to distribute the questionnaire and conduct the experiment.
       - The research proposal has been presented on ICA24 (Top Extended Abstract Award), Etmaal 2024, and ECREA24.
       - Key Methods: Experiment, Survey, R, SPSS
-  - position: "Research Assistant | Dissecting Digital Natives’ Political Preferences: Election Campaigns and YouTube Media Exposure"
-    institution: Amsterdam School of Communication Research / ASCoR
-    date_start: 2024-04-01
-    date_end: 2025-01-01
-    supervisor: Dr. F. (Felicia) Loecherbach
-    summary: |2-
-      - Performed YouTube video analyses, including scraping metadata, automated text analysis and topic classification.
-      - Results are presented in the ODISSEI conference and IC2S2.
-      - Key Methods: Automated Content Analysis, Data Donation, NLP, Supervised Machine Learning, Survey, Python, SPSS
-  - position: "Research Assistant | Mapping the Collective Wisdom of Online Rare Disease Communities: a Patient-Driven Algorithm"
+  - position: "[Research Assistant | Mapping the Collective Wisdom of Online Rare Disease Communities: a Patient-Driven Algorithm](https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-der-maatschappij-en-gedragswetenschappen/news/2025/05/facebook-rare-diseases.html)"
     institution: Amsterdam School of Communication Research / ASCoR
     url: https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-der-maatschappij-en-gedragswetenschappen/news/2025/05/facebook-rare-diseases.html 
     date_start: 2024-09-01
     date_end: ''
-    supervisor: Dr. A.J. (Annemiek) Linn
+    supervisor: "[Dr. A.J. (Annemiek) Linn](https://www.uva.nl/profiel/l/i/a.j.linn/a.j.linn.html)"
+    supervisor_url: https://www.uva.nl/profiel/l/i/a.j.linn/a.j.linn.html
     summary: |2-
       - Conducted systematic content analysis on rare disease communities social media data to develop an open-source algorithm.
       - Collaborated with a multidisciplinary research team to interpret findings and generate insights.
       - Key Methods: Content Analysis, Data Donation, Interview
+  - position: "Research Assistant | Dissecting Digital Natives’ Political Preferences: Election Campaigns and YouTube Media Exposure"
+    institution: Amsterdam School of Communication Research / ASCoR
+    date_start: 2024-04-01
+    date_end: 2025-01-01
+    supervisor: "[Dr. F. (Felicia) Loecherbach](https://www.uva.nl/en/profile/l/o/f.loecherbach/f.loecherbach.html)"
+    supervisor_url: https://www.uva.nl/en/profile/l/o/f.loecherbach/f.loecherbach.html
+    summary: |2-
+      - Performed YouTube video analyses, including scraping metadata, automated text analysis and topic classification.
+      - Results are presented in the ODISSEI conference and IC2S2.
+      - Key Methods: Automated Content Analysis, Data Donation, NLP, Supervised Machine Learning, Survey, Python, SPSS
   - position: "Coding Assistant"
     institution: Digicomlab, ASCoR
     date_start: 2024-05-01
@@ -264,4 +267,4 @@ awards:
 
 ## About Me
 
-Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by Professor Qing'an Zhou. She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale.
+Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by [Professor Qing'an Zhou](https://www.tsjc.tsinghua.edu.cn/en/info/1029/1278.htm). She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale.
