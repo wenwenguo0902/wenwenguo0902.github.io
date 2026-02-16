@@ -40,7 +40,7 @@ header:
 # Site footer
 footer:
   copyright:
-    # notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Wenwen Guo. All rights reserved. ♥  [Liangwang](https://lwruan.github.io)'
     license:
       enable: true
       allow_derivatives: false
