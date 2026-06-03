@@ -1,52 +1,42 @@
 ---
-
 # Display name
-
 title: 郭雯雯
 
 # Name pronunciation
-
 name_pronunciation: Wenwen Guo
 
 # Full name for SEO
-
 first_name: Wenwen
 last_name: Guo
 
 # Is this the primary user of the site?
-
 superuser: true
 
 # Highlight the author in author lists
-
 highlight_name: true
 
 # Role/position/tagline
-
 role: PhD Student
 
 # Organizations/Affiliations
-
 organizations:
-
-* name: Tsinghua University
-  url: https://www.tsjc.tsinghua.edu.cn/en/
+  - name: Tsinghua University
+    url: "https://www.tsjc.tsinghua.edu.cn/en/"
 
 # Social network links
-
 profiles:
-
-* icon: at-symbol
-  url: 'mailto:wenwenguo0902@gmail.com'
-  label: E-mail Me
-* icon: brands/github
-  url: https://github.com/wenwenguo0902
-* icon: brands/linkedin
-  url: https://www.linkedin.com/in/wenwen-guo-26980b250/
-* icon: academicons/orcid
-  url: https://orcid.org/0009-0004-4220-2417
-
+  - icon: at-symbol
+    url: "mailto:wenwenguo0902@gmail.com"
+    label: E-mail Me
+  - icon: brands/github
+    url: "https://github.com/wenwenguo0902"
+  - icon: brands/linkedin
+    url: "https://www.linkedin.com/in/wenwen-guo-26980b250/"
+  - icon: academicons/orcid
+    url: "https://orcid.org/0009-0004-4220-2417"
+    
 ---
+
 ## About Me
 
 Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by [Professor Qing'an Zhou](https://www.tsjc.tsinghua.edu.cn/en/info/1029/1278.htm). She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale, while maintaining a touch of tenderness toward human experience.
