@@ -47,11 +47,10 @@ profiles:
     url: https://orcid.org/0009-0004-4220-2417
 
 interests:
-  - Media Representation
-  - Global Communication
+  - Global journalism
+  - Media trust
   - Health Communication
-  - Machine Learning
-  - Structual Equation Modeling
+  - Quantitative methods
 
 education:
   - area: PhD Journalism and Communication
@@ -67,35 +66,15 @@ education:
     institution: University of Amsterdam
     date_start: 2023-02-01
     date_end: 2025-01-01
-    summary: |
-      GPA: 7.74/10.0
-      - Courses included:
-        - Big Data & Automated Content Analysis, Part I & II (8.0); Using R for Data Wrangling, Analysis and Visualization (9.0);
-        - Structural Equation Modeling (7.7); Shaping Society: How Organisations and the Media Influence Public Issues (8.2);
-        - Content Analysis (7.4); Survey Design (7.2); Experimentation in the Social Sciences (7.4)
-      - Thesis:
-        - Framing Disability in Paralympic News Coverage: A Cross-National Ternary Framing Analysis and the Impact of Time and Host Status (2012-2024); Supervisor: [Dr. A. C. (Anne) Kroon](https://www.uva.nl/en/profile/k/r/a.c.kroon/a.c.kroon.html); presented in Etmaal 2025
   - area: BA Advertising
     institution: Peking University
     date_start: 2018-09-01
     date_end: 2022-06-01
-    summary: |
-      GPA: 3.75/4.0
-      - Courses included:
-        - Introduction to New Media (95); Advertising Media Studies (93); Visual Communication (97); English News Reading (96)
-      - Awards included:
-        - Excellent Graduate of Peking University (2022, top 5%);
-        - Merit Student of Peking University (2021, top 10%); The Third Prize of Peking University Scholarship (2021, top 5%);
-        - Award for Scientific Research (top 10%); Award for Contribution in Student Organizations (top 10%); Scholarship by People’s Daily Online (1/95); Outstanding Contribution for the 2022 Beijing Winter Olympics and Paralympics of Peking University
   - area: BE Economics
     institution: Peking University
     date_start: 2019-09-01
     date_end: 2022-06-01
-    summary: |
-      - Courses included:
-        - Econometrics; Probability and Statistics; Financial Accounting;
-        - Intermediate Macroeconomics; Intermediate Microeconomics; Macroeconomy and Health; International Trade
-
+   
 project:
   - position: "[Research Assistant | Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies](https://www.nwo.nl/en/projects/vividi211101)"
     institution: Amsterdam School of Communication Research / ASCoR
