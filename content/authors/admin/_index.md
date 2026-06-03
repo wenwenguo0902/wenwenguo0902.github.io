@@ -1,259 +1,270 @@
 ---
+
 # Display name
+
 title: 郭雯雯
 
-# Name pronunciation (optional)
+# Name pronunciation
+
 name_pronunciation: Wenwen Guo
 
-# Full name (for SEO)
+# Full name for SEO
+
 first_name: Wenwen
 last_name: Guo
 
 # Status emoji
+
 # status:
-#   icon: ☕️
+
+# icon: ☕️
 
 # Is this the primary user of the site?
+
 superuser: true
 
-# Highlight the author in author lists? (true/false)
+# Highlight the author in author lists
+
 highlight_name: true
 
 # Role/position/tagline
+
 role: PhD Student
 
 # Organizations/Affiliations to display in Biography blox
+
 organizations:
-  - name: Tsinghua University
-    url: https://www.tsjc.tsinghua.edu.cn/en/
+
+* name: Tsinghua University
+  url: https://www.tsjc.tsinghua.edu.cn/en/
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+
 profiles:
-  - icon: at-symbol
-    url: 'mailto:wenwenguo0902@gmail.com'
-    label: E-mail Me
-  # - icon: brands/x
-  #   url: https://twitter.com/GetResearchDev
-  # - icon: brands/instagram
-  #   url: https://www.instagram.com/
-  - icon: brands/github
-    url: https://github.com/wenwenguo0902
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/wenwen-guo-26980b250/
-  # - icon: academicons/google-scholar
-  #   url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/0009-0004-4220-2417
 
-interests:
-  - Global journalism
-  - Media trust
-  - Health Communication
-  - Quantitative methods
+* icon: at-symbol
+  url: 'mailto:wenwenguo0902@gmail.com'
+  label: E-mail Me
+* icon: brands/github
+  url: https://github.com/wenwenguo0902
+* icon: brands/linkedin
+  url: https://www.linkedin.com/in/wenwen-guo-26980b250/
+* icon: academicons/orcid
+  url: https://orcid.org/0009-0004-4220-2417
 
-education:
-  - area: PhD Journalism and Communication
-    institution: Tsinghua University
-    date_start: 2025-09-01
-    date_end: ''
-    # summary: |
-    #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
-  - area: MSc Communication Science
-    institution: University of Amsterdam
-    date_start: 2023-02-01
-    date_end: 2025-01-01
-  - area: BA Advertising
-    institution: Peking University
-    date_start: 2018-09-01
-    date_end: 2022-06-01
-  - area: BE Economics
-    institution: Peking University
-    date_start: 2019-09-01
-    date_end: 2022-06-01
-   
-project:
-  - position: "[Research Assistant | Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies](https://www.nwo.nl/en/projects/vividi211101)"
-    institution: Amsterdam School of Communication Research / ASCoR
-    url: https://www.nwo.nl/en/projects/vividi211101
-    date_start: 2023-09-01
-    date_end: ''
-    supervisor: "[Dr. M. (Mark) Boukes](https://www.uva.nl/en/profile/b/o/m.boukes/m.boukes.html)"
-    supervisor_url: https://www.uva.nl/en/profile/b/o/m.boukes/m.boukes.html
-    summary: |2-
-      - Conducted literature review, pre-registration, experiment stimuli and scale designs to determine journalist strategies to restore trust.
-      - Coordinated with fellow ASCoR members and scholars from over 32 countries to distribute the questionnaire and conduct the experiment.
-      - The research proposal has been presented on ICA24 (Top Extended Abstract Award), Etmaal 2024, and ECREA24.
-      - Key Methods: Experiment, Survey, R, SPSS
-  - position: "[Research Assistant | Mapping the Collective Wisdom of Online Rare Disease Communities: a Patient-Driven Algorithm](https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-der-maatschappij-en-gedragswetenschappen/news/2025/05/facebook-rare-diseases.html)"
-    institution: Amsterdam School of Communication Research / ASCoR
-    url: https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-der-maatschappij-en-gedragswetenschappen/news/2025/05/facebook-rare-diseases.html 
-    date_start: 2024-09-01
-    date_end: ''
-    supervisor: "[Dr. A.J. (Annemiek) Linn](https://www.uva.nl/profiel/l/i/a.j.linn/a.j.linn.html)"
-    supervisor_url: https://www.uva.nl/profiel/l/i/a.j.linn/a.j.linn.html
-    summary: |2-
-      - Conducted systematic content analysis on rare disease communities social media data to develop an open-source algorithm.
-      - Collaborated with a multidisciplinary research team to interpret findings and generate insights.
-      - Key Methods: Content Analysis, Data Donation, Interview
-  - position: "Research Assistant | Dissecting Digital Natives’ Political Preferences: Election Campaigns and YouTube Media Exposure"
-    institution: Amsterdam School of Communication Research / ASCoR
-    date_start: 2024-04-01
-    date_end: 2025-01-01
-    supervisor: "[Dr. F. (Felicia) Loecherbach](https://www.uva.nl/en/profile/l/o/f.loecherbach/f.loecherbach.html)"
-    supervisor_url: https://www.uva.nl/en/profile/l/o/f.loecherbach/f.loecherbach.html
-    summary: |2-
-      - Performed YouTube video analyses, including scraping metadata, automated text analysis and topic classification.
-      - Results are presented in the ODISSEI conference and IC2S2.
-      - Key Methods: Automated Content Analysis, Data Donation, NLP, Supervised Machine Learning, Survey, Python, SPSS
-  - position: "Coding Assistant"
-    institution: Digicomlab, ASCoR
-    date_start: 2024-05-01
-    date_end: 2024-06-01
-    summary: |2-
-      - Provided manual content analysis coding on political outgroup representations and evaluations for YouTube Comments.
-      - Key Methods: Content Analysis, Web Scraping
-  - position: "Coding Assistant"
-    institution: Digicomlab, ASCoR
-    date_start: 2023-05-01
-    date_end: 2023-06-01
-    summary: |2-
-      - Coded on the topic of Feminism perceptions and actions on Chinese social media (Weibo Posts).
-      - Key Methods: Content Analysis, Qualtrics
-  - position: "Increasing Brand Trust in Cross-country Brands"
-    institution: Peking University
-    supervisor: Dr. Yan Han
-    date_start: 2021-06-01
-    date_end: 2021-07-01
-    summary: |2-
-      - Conducted literature research on brand trust in fields of economy, psychology, sociology, and management.
-      - Approached brand trust under Hess’s Ternary Brand Trust Theory and summarized factors and tactics to building brand trust.
-      - Key Methods: Literature Review
+# -------------------------------------------------------------------
 
-work:
-  - position: Product Manager, Corporate Development Group (CDG) 
-    company_name: Tencent
-    company_url: 'https://www.tencent.com'
-    company_logo: ''
-    date_start: 2023-05-01
-    date_end: 2023-08-01
-    summary: |2-
-      - Developed and promoted a non-profit carbon neutralization platform TanLIVE to support the net zero emissions goal in 2040.
-      - Attended meetings and summits to trade resources with global and national sustainability departments, including UNESCO, the Hunan Provincial Department of Ecology and Environment, and China Petroleum and Chemical Industry Federation.
-  - position: Advertising, Overseas Business Department
-    company_name: iQIYI
-    company_url: 'https://www.iqiyi.com'
-    company_logo: ''
-    date_start: 2021-09-01
-    date_end: 2021-12-01
-    summary: |
-      - Conducted influencer marketing to drive user generation and content promotion.
-      - Reviewed over 1,000 advertising videos in more than 8 languages, ensuring compliance with regional policies and ad effectiveness.
-  - position: Integrated Marketing Communications, JD Home Appliances 
-    company_name: JD
-    company_url: 'https://www.jd.com'
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: 2021-03-01
-    summary: |
-      - Plotted the “Super 5”, “double 11” sales event, picked out actors for the Television Commercial and utilized the final shooting clip.
-      - Delivered marketing research through mass data platforms and social media platforms to nail down its final brand spokesperson, which helped JD win 4 times its usual engagement and double its followers on Weibo.
-  - position: Content Operation, WeChat 
-    company_name: Tencent
-    company_url: 'https://www.tencent.com'
-    company_logo: ''
-    date_start: 2020-07-01
-    date_end: 2020-11-01
-    summary: |
-      - Edited more than 150 short videos independently (mainly entertainment and sports videos), with highlight video exceeding 20k likes.
-      - Hosted creative video planning and audited approximately 1,000 videos in terms of scene composition and lens language.
-  - position: PSA Advertising, Ocean Engine 
-    company_name: Bytedance
-    company_url: 'https://www.bytedance.com'
-    company_logo: ''
-    date_start: 2021-04-01
-    date_end: 2021-07-01
-    summary: |
-      - Edited more than 100 advertisements for an environmental conservation organization, with the cost minimizing to $0.1 per new user.
-      - Distributed over 200 advertising plans through the Ocean Engine platform and optimized them according to CPC and CPM performance.
-  - position: "\"Stand to the End\" entertainment show & news center"
-    company_name: Jiangsu Broadcasting Corporation
-    company_url: ''
-    company_logo: ''
-    date_start: 2019-07-01
-    date_end: 2019-08-01
-    summary: |
-      - Studied the language norms and taboos in radio and television, and independently formed 100 formal game questions.
-      - Interviewed nearly 50 applicants with the director to select the final candidate.
-      - Edited more than 100 daily news and corrected over 40 scripts.
+# Disabled legacy Hugo Blox auto-rendered sections.
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        # percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  # - name: Hobbies
-  #   color: '#eeac02'
-  #   color_border: '#f0bf23'
-  #   items:
-  #     - name: Hiking
-  #       description: ''
-  #       percent: 60
-  #       icon: person-simple-walk
-  #     - name: Cats
-  #       description: ''
-  #       percent: 100
-  #       icon: cat
-  #     - name: Photography
-  #       description: ''
-  #       percent: 80
-  #       icon: camera
+# These are turned off because the homepage content is now written
 
-languages:
-  - name: Chinese
-    percent: 100
-  - name: English
-    percent: 90
+# directly in Markdown below.
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+# -------------------------------------------------------------------
+
+# interests:
+
+# - Global journalism
+
+# - Media trust
+
+# - Health Communication
+
+# - Quantitative methods
+
+# education:
+
+# - area: PhD Journalism and Communication
+
+# institution: Tsinghua University
+
+# date_start: 2025-09-01
+
+# date_end: ''
+
+# - area: MSc Communication Science
+
+# institution: University of Amsterdam
+
+# date_start: 2023-02-01
+
+# date_end: 2025-01-01
+
+# - area: BA Advertising
+
+# institution: Peking University
+
+# date_start: 2018-09-01
+
+# date_end: 2022-06-01
+
+# - area: BE Economics
+
+# institution: Peking University
+
+# date_start: 2019-09-01
+
+# date_end: 2022-06-01
+
+# project:
+
+# - position: Research Assistant | Restoring Trust in Journalism
+
+# - position: Research Assistant | Mapping the Collective Wisdom of Online Rare Disease Communities
+
+# - position: Research Assistant | Dissecting Digital Natives’ Political Preferences
+
+# - position: Coding Assistant
+
+# - position: Increasing Brand Trust in Cross-country Brands
+
+# work:
+
+# - position: Product Manager, Corporate Development Group (CDG)
+
+# - position: Advertising, Overseas Business Department
+
+# - position: Integrated Marketing Communications, JD Home Appliances
+
+# - position: Content Operation, WeChat
+
+# - position: PSA Advertising, Ocean Engine
+
+# - position: Entertainment Show and News Center Intern
+
+# skills:
+
+# - name: Technical Skills
+
+# languages:
+
+# - name: Chinese
+
+# percent: 100
+
+# - name: English
+
+# percent: 90
+
+# awards:
+
+# - title: Neural Networks and Deep Learning
+
 ---
 
 ## About Me
 
-Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by [Professor Qing'an Zhou](https://www.tsjc.tsinghua.edu.cn/en/info/1029/1278.htm). She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale.
+Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by [Professor Qing'an Zhou](https://www.tsjc.tsinghua.edu.cn/en/info/1029/1278.htm). She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale, while maintaining a touch of tenderness toward human experience.
+
+## Download CV
+
+[Download CV](/CV_Wenwen_Guo.pdf)
 
 ## Selected Publications
 
-- Guo, W., & Kroon, A. C. (2026). Framing disability in sport journalism: A cross-national automated framing analysis of Paralympic news (2012–2024). *Journalism*, 0(0). https://doi.org/10.1177/14648849261438227
+* Guo, W., & Kroon, A. C. (2026). Framing disability in sport journalism: A cross-national automated framing analysis of Paralympic news (2012–2024). *Journalism*, 0(0). https://doi.org/10.1177/14648849261438227
 
-- Guo, W., & Liu, Y. (in press). (De)colonizing climate discourse: Alternative narratives and multi-level framing of Net Zero across the Global North and South (2015–2024). *Journalism Studies*. https://doi.org/10.1080/1461670X.2026.2684762
+* Guo, W., & Liu, Y. (in press). (De)colonizing climate discourse: Alternative narratives and multi-level framing of Net Zero across the Global North and South (2015–2024). *Journalism Studies*. https://doi.org/10.1080/1461670X.2026.2684762
 
-- Liu, Y., & Guo, W. (in press). Are organizational resources always protective? Journalists’ job burnout and life satisfaction under collectivistic contexts. *Journalism & Mass Communication Quarterly*. https://doi.org/10.1177/10776990261457637
+* Liu, Y., & Guo, W. (in press). Are organizational resources always protective? Journalists’ job burnout and life satisfaction under collectivistic contexts. *Journalism & Mass Communication Quarterly*. https://doi.org/10.1177/10776990261457637
 
-- Zhou, Q., & Guo, W. (2025). 智能时代国际传播效能评估的全球比较与实践 [A global comparison of measuring international communication efficacy in the intelligent era]. *现代出版 [Modern Publishing]*, (10), 24–36.
+* Zhou, Q., & Guo, W. (2025). 智能时代国际传播效能评估的全球比较与实践 [A global comparison of measuring international communication efficacy in the intelligent era]. *现代出版 [Modern Publishing]*, (10), 24–36.
+
+## Education
+
+**PhD Candidate in Journalism and Communication**
+*Tsinghua University, School of Journalism and Communication*
+Beijing, China · Sept. 2023 – Present
+Supervisor: [Professor Qing'an Zhou](https://www.tsjc.tsinghua.edu.cn/en/info/1029/1278.htm)
+
+**Research Master’s in Communication Science**
+*University of Amsterdam, School of Social and Behavioural Sciences*
+Amsterdam, The Netherlands · Feb. 2023 – Jan. 2025
+Supervisor: [Dr. A. C. (Anne) Kroon](https://www.uva.nl/en/profile/k/r/a.c.kroon/a.c.kroon.html)
+
+**BA in Advertising**
+*Peking University, School of Journalism and Communication*
+Beijing, China · Sept. 2018 – Jul. 2022
+Major GPA: 3.75/4.00, Distinction
+
+**Second Major in Economics**
+*Peking University, National School of Development*
+Beijing, China · Sept. 2019 – Jul. 2022
+
+## Selected Conference Presentations
+
+* Guo, W., & Ruan, L. (2026, June 4–8). *Co-creating cybernetic borders: Mapping immigrant acculturation and public conditioned gatekeeping through elite transnational Olympians’ social media*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa.
+
+* Guo, W., & Kroon, A. C. (2026, June 4–8). *Framing disability in Paralympic news coverage: A ternary viewpoint*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa.
+
+* Boukes, M., Qin, A., Blanco-Herrero, D., Guo, W., Liu, Y., Strömbäck, J., Park, S., Uth, B., Theorin, N., Møller, L. A., Nah, S., Boomgaarden, H., Rasul, A., Fletcher, R., Tandoc, E., Amores, J., Lee, T.-T., Boursier, A., Mogos, A., ... Chuma, W. (2026, June 4–8). *Distinguishing news media trust, skepticism, and cynicism through elaboration: Toward a global typology of distrustors, mistrustors, automatic trustors, and engaged trustors*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa. Top Paper, Journalism Studies Division.
+
+* Guo, W., & Liu, Y. (2025, July 13–17). *Framing climate news through the MICKEY framework: A decolonial analysis across Global North and South (2015–2024)*. International Association for Media and Communication Research (IAMCR) 2025, Singapore.
+
+* Loecherbach, F., & Guo, W. (2024, October 10). *Dissecting digital natives’ political preferences: Election campaigns and YouTube media exposure*. The ODISSEI Conference for Social Science, Utrecht, The Netherlands.
+
+* Guo, W. (2025, November 22–23). 主流媒体系统性变革中的跨媒介议程设置 [Cross-media agenda setting amid the systematic transformation of mainstream media]. 中国新闻史学会 2025 年学术年会 [2025 Annual Conference of the China Journalism History Society], Chongqing, China.
+
+## Research Projects
+
+**Research Assistant · Restoring Trust in Journalism: A Cross-Country Investigation into the Impact of Journalistic Repair Strategies**
+*Amsterdam School of Communication Research / ASCoR*
+Sept. 2023 – Present
+Supervisor: [Dr. M. (Mark) Boukes](https://www.uva.nl/en/profile/b/o/m.boukes/m.boukes.html)
+Key methods: Experiment, survey, R, SPSS
+
+**Research Assistant · Mapping the Collective Wisdom of Online Rare Disease Communities: A Patient-Driven Algorithm**
+*Amsterdam School of Communication Research / ASCoR*
+Sept. 2024 – Present
+Supervisor: [Dr. A. J. (Annemiek) Linn](https://www.uva.nl/en/profile/l/i/a.j.linn/a.j.linn.html)
+Key methods: Content analysis, data donation, interview
+
+**Research Assistant · Dissecting Digital Natives’ Political Preferences: Election Campaigns and YouTube Media Exposure**
+*Amsterdam School of Communication Research / ASCoR*
+Apr. 2024 – Jan. 2025
+Supervisor: [Dr. F. (Felicia) Loecherbach](https://www.uva.nl/en/profile/l/o/f.loecherbach/f.loecherbach.html)
+Key methods: Automated content analysis, data donation, NLP, supervised machine learning, survey, Python, SPSS
+
+## Awards
+
+* Excellent Graduate, Peking University.
+
+* Excellent Graduate of the School of Journalism and Communication, Peking University.
+
+* Award for Outstanding Contribution to Volunteer Service, Beijing 2022 Winter Olympics and Paralympics, Peking University.
+
+* Merit Student of Peking University.
+
+* Third-Class Scholarship for Peking University.
+
+* Award for Scientific Research.
+
+* Award for Contribution in Student Organizations.
+
+* Scholarship by People’s Daily Online.
+
+## Industry Experience
+
+**Product Manager, Corporate Development Group (CDG)**
+*Tencent*
+Beijing, China · May 2023 – Aug. 2023
+
+**Advertising, Overseas Business Department**
+*iQIYI*
+Beijing, China · Sept. 2021 – Dec. 2021
+
+**PSA Advertising, Ocean Engine**
+*ByteDance*
+Beijing, China · Apr. 2021 – Jul. 2021
+
+**Integrated Marketing Communications, JD Home Appliances**
+*JD*
+Beijing, China · Jan. 2021 – Mar. 2021
+
+**Content Operation, WeChat**
+*Tencent*
+Beijing, China · Jul. 2020 – Nov. 2020
+
+**Entertainment Show and News Center Intern**
+*Jiangsu Broadcasting Corporation*
+Beijing, China · Jul. 2019 – Aug. 2019
