@@ -247,3 +247,13 @@ awards:
 ## About Me
 
 Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by [Professor Qing'an Zhou](https://www.tsjc.tsinghua.edu.cn/en/info/1029/1278.htm). She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale.
+
+## Selected Publications
+
+- Guo, W., & Kroon, A. C. (2026). Framing disability in sport journalism: A cross-national automated framing analysis of Paralympic news (2012–2024). *Journalism*, 0(0). https://doi.org/10.1177/14648849261438227
+
+- Guo, W., & Liu, Y. (in press). (De)colonizing climate discourse: Alternative narratives and multi-level framing of Net Zero across the Global North and South (2015–2024). *Journalism Studies*. https://doi.org/10.1080/1461670X.2026.2684762
+
+- Liu, Y., & Guo, W. (in press). Are organizational resources always protective? Journalists’ job burnout and life satisfaction under collectivistic contexts. *Journalism & Mass Communication Quarterly*. https://doi.org/10.1177/10776990261457637
+
+- Zhou, Q., & Guo, W. (2025). 智能时代国际传播效能评估的全球比较与实践 [A global comparison of measuring international communication efficacy in the intelligent era]. *现代出版 [Modern Publishing]*, (10), 24–36.
