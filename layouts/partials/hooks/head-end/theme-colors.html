@@ -73,60 +73,85 @@
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 60%, transparent);
   }
 
-  /* ===== About section entrance animation ===== */
-
-  /* 初始状态：先隐藏并轻微位移 */
-  .wg-about #profile .portrait-title,
-  .wg-about #profile .network-icon,
-  .wg-about .col-12.col-lg-8 > h1,
-  .wg-about .article-style > p,
-  .wg-about .col-md-5,
-  .wg-about .col-md-7 {
+   /* ===== Homepage About entrance animation ===== */
+  
+  /* 左侧头像以下：姓名、中文名、身份、学校、社交图标 */
+  .home-section:first-of-type #profile .portrait-title,
+  .home-section:first-of-type #profile .network-icon {
     opacity: 0;
-    animation-fill-mode: both;
-    animation-duration: 0.85s;
-    animation-timing-function: cubic-bezier(.22, .61, .36, 1);
+    animation: aboutSlideLeft 0.8s cubic-bezier(.22,.61,.36,1) forwards;
   }
   
-  /* 头像以下：姓名、身份、学校、社交图标，从左往右 */
-  .wg-about #profile .portrait-title {
-    animation-name: floatInLeft;
-    animation-delay: 0.10s;
-  }
-  
-  .wg-about #profile .network-icon {
-    animation-name: floatInLeft;
-    animation-delay: 0.22s;
-  }
-  
-  /* About Me + 正文 + Download CV，从上往下 */
-  .wg-about .col-12.col-lg-8 > h1 {
-    animation-name: floatInTop;
+  .home-section:first-of-type #profile .portrait-title {
     animation-delay: 0.12s;
   }
   
-  .wg-about .article-style > p {
-    animation-name: floatInTop;
-    animation-delay: 0.24s;
+  .home-section:first-of-type #profile .network-icon {
+    animation-delay: 0.28s;
   }
   
-  /* Interests + bullet points，从下往上 */
-  .wg-about .col-md-5 {
-    animation-name: floatInBottom;
-    animation-delay: 0.36s;
+  /* About Me 标题、正文、Download CV：从上往下 */
+  .home-section:first-of-type h1,
+  .home-section:first-of-type .article-style,
+  .home-section:first-of-type .prose,
+  .home-section:first-of-type .btn,
+  .home-section:first-of-type .btn-links {
+    opacity: 0;
+    animation: aboutSlideTop 0.8s cubic-bezier(.22,.61,.36,1) forwards;
   }
   
-  /* Education + pinpoints，从右往左 */
-  .wg-about .col-md-7 {
-    animation-name: floatInRight;
-    animation-delay: 0.44s;
+  .home-section:first-of-type h1 {
+    animation-delay: 0.10s;
   }
   
-  /* 动画定义 */
-  @keyframes floatInLeft {
+  .home-section:first-of-type .article-style,
+  .home-section:first-of-type .prose {
+    animation-delay: 0.22s;
+  }
+  
+  .home-section:first-of-type .btn,
+  .home-section:first-of-type .btn-links {
+    animation-delay: 0.34s;
+  }
+  
+  /* Interests：从下往上 */
+  .home-section:first-of-type .ul-interests,
+  .home-section:first-of-type .ul-interests li {
+    opacity: 0;
+    animation: aboutSlideBottom 0.8s cubic-bezier(.22,.61,.36,1) forwards;
+  }
+  
+  .home-section:first-of-type .ul-interests {
+    animation-delay: 0.38s;
+  }
+  
+  .home-section:first-of-type .ul-interests li:nth-child(1) { animation-delay: 0.42s; }
+  .home-section:first-of-type .ul-interests li:nth-child(2) { animation-delay: 0.48s; }
+  .home-section:first-of-type .ul-interests li:nth-child(3) { animation-delay: 0.54s; }
+  .home-section:first-of-type .ul-interests li:nth-child(4) { animation-delay: 0.60s; }
+  .home-section:first-of-type .ul-interests li:nth-child(5) { animation-delay: 0.66s; }
+  
+  /* Education：从右往左 */
+  .home-section:first-of-type .ul-edu,
+  .home-section:first-of-type .ul-edu li {
+    opacity: 0;
+    animation: aboutSlideRight 0.8s cubic-bezier(.22,.61,.36,1) forwards;
+  }
+  
+  .home-section:first-of-type .ul-edu {
+    animation-delay: 0.42s;
+  }
+  
+  .home-section:first-of-type .ul-edu li:nth-child(1) { animation-delay: 0.46s; }
+  .home-section:first-of-type .ul-edu li:nth-child(2) { animation-delay: 0.52s; }
+  .home-section:first-of-type .ul-edu li:nth-child(3) { animation-delay: 0.58s; }
+  .home-section:first-of-type .ul-edu li:nth-child(4) { animation-delay: 0.64s; }
+  
+  /* 动效方向 */
+  @keyframes aboutSlideLeft {
     from {
       opacity: 0;
-      transform: translateX(-28px);
+      transform: translateX(-32px);
     }
     to {
       opacity: 1;
@@ -134,10 +159,10 @@
     }
   }
   
-  @keyframes floatInRight {
+  @keyframes aboutSlideRight {
     from {
       opacity: 0;
-      transform: translateX(28px);
+      transform: translateX(32px);
     }
     to {
       opacity: 1;
@@ -145,10 +170,10 @@
     }
   }
   
-  @keyframes floatInTop {
+  @keyframes aboutSlideTop {
     from {
       opacity: 0;
-      transform: translateY(-24px);
+      transform: translateY(-28px);
     }
     to {
       opacity: 1;
@@ -156,10 +181,10 @@
     }
   }
   
-  @keyframes floatInBottom {
+  @keyframes aboutSlideBottom {
     from {
       opacity: 0;
-      transform: translateY(24px);
+      transform: translateY(28px);
     }
     to {
       opacity: 1;
@@ -167,12 +192,12 @@
     }
   }
   
-  /* 手机端位移减轻一点，避免左右晃动太明显 */
+  /* 手机端位移减小 */
   @media (max-width: 768px) {
-    @keyframes floatInLeft {
+    @keyframes aboutSlideLeft {
       from {
         opacity: 0;
-        transform: translateX(-16px);
+        transform: translateX(-18px);
       }
       to {
         opacity: 1;
@@ -180,29 +205,37 @@
       }
     }
   
-    @keyframes floatInRight {
+    @keyframes aboutSlideRight {
       from {
         opacity: 0;
-        transform: translateX(16px);
+        transform: translateX(18px);
       }
       to {
         opacity: 1;
         transform: translateX(0);
       }
     }
-  }
   
-  /* 尊重系统的减少动画设置 */
-  @media (prefers-reduced-motion: reduce) {
-    .wg-about #profile .portrait-title,
-    .wg-about #profile .network-icon,
-    .wg-about .col-12.col-lg-8 > h1,
-    .wg-about .article-style > p,
-    .wg-about .col-md-5,
-    .wg-about .col-md-7 {
-      animation: none !important;
-      opacity: 1 !important;
-      transform: none !important;
+    @keyframes aboutSlideTop {
+      from {
+        opacity: 0;
+        transform: translateY(-18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes aboutSlideBottom {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
 </style>
