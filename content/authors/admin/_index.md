@@ -13,12 +13,6 @@ name_pronunciation: Wenwen Guo
 first_name: Wenwen
 last_name: Guo
 
-# Status emoji
-
-# status:
-
-# icon: ☕️
-
 # Is this the primary user of the site?
 
 superuser: true
@@ -31,7 +25,7 @@ highlight_name: true
 
 role: PhD Student
 
-# Organizations/Affiliations to display in Biography blox
+# Organizations/Affiliations
 
 organizations:
 
@@ -52,106 +46,7 @@ profiles:
 * icon: academicons/orcid
   url: https://orcid.org/0009-0004-4220-2417
 
-# -------------------------------------------------------------------
-
-# Disabled legacy Hugo Blox auto-rendered sections.
-
-# These are turned off because the homepage content is now written
-
-# directly in Markdown below.
-
-# -------------------------------------------------------------------
-
-# interests:
-
-# - Global journalism
-
-# - Media trust
-
-# - Health Communication
-
-# - Quantitative methods
-
-# education:
-
-# - area: PhD Journalism and Communication
-
-# institution: Tsinghua University
-
-# date_start: 2025-09-01
-
-# date_end: ''
-
-# - area: MSc Communication Science
-
-# institution: University of Amsterdam
-
-# date_start: 2023-02-01
-
-# date_end: 2025-01-01
-
-# - area: BA Advertising
-
-# institution: Peking University
-
-# date_start: 2018-09-01
-
-# date_end: 2022-06-01
-
-# - area: BE Economics
-
-# institution: Peking University
-
-# date_start: 2019-09-01
-
-# date_end: 2022-06-01
-
-# project:
-
-# - position: Research Assistant | Restoring Trust in Journalism
-
-# - position: Research Assistant | Mapping the Collective Wisdom of Online Rare Disease Communities
-
-# - position: Research Assistant | Dissecting Digital Natives’ Political Preferences
-
-# - position: Coding Assistant
-
-# - position: Increasing Brand Trust in Cross-country Brands
-
-# work:
-
-# - position: Product Manager, Corporate Development Group (CDG)
-
-# - position: Advertising, Overseas Business Department
-
-# - position: Integrated Marketing Communications, JD Home Appliances
-
-# - position: Content Operation, WeChat
-
-# - position: PSA Advertising, Ocean Engine
-
-# - position: Entertainment Show and News Center Intern
-
-# skills:
-
-# - name: Technical Skills
-
-# languages:
-
-# - name: Chinese
-
-# percent: 100
-
-# - name: English
-
-# percent: 90
-
-# awards:
-
-# - title: Neural Networks and Deep Learning
-
 ---
-
 ## About Me
 
 Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsinghua University, supervised by [Professor Qing'an Zhou](https://www.tsjc.tsinghua.edu.cn/en/info/1029/1278.htm). She strives to leverage data-driven, computer-mediated methods to mitigate social inequality on a global scale, while maintaining a touch of tenderness toward human experience.
