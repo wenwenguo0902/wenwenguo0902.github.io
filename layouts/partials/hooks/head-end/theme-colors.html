@@ -75,136 +75,136 @@
 
   /* ===== About section entrance animation ===== */
 
-/* 初始状态：先隐藏并轻微位移 */
-.wg-about #profile .portrait-title,
-.wg-about #profile .network-icon,
-.wg-about .col-12.col-lg-8 > h1,
-.wg-about .article-style > p,
-.wg-about .col-md-5,
-.wg-about .col-md-7 {
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-duration: 0.85s;
-  animation-timing-function: cubic-bezier(.22, .61, .36, 1);
-}
-
-/* 头像以下：姓名、身份、学校、社交图标，从左往右 */
-.wg-about #profile .portrait-title {
-  animation-name: floatInLeft;
-  animation-delay: 0.10s;
-}
-
-.wg-about #profile .network-icon {
-  animation-name: floatInLeft;
-  animation-delay: 0.22s;
-}
-
-/* About Me + 正文 + Download CV，从上往下 */
-.wg-about .col-12.col-lg-8 > h1 {
-  animation-name: floatInTop;
-  animation-delay: 0.12s;
-}
-
-.wg-about .article-style > p {
-  animation-name: floatInTop;
-  animation-delay: 0.24s;
-}
-
-/* Interests + bullet points，从下往上 */
-.wg-about .col-md-5 {
-  animation-name: floatInBottom;
-  animation-delay: 0.36s;
-}
-
-/* Education + pinpoints，从右往左 */
-.wg-about .col-md-7 {
-  animation-name: floatInRight;
-  animation-delay: 0.44s;
-}
-
-/* 动画定义 */
-@keyframes floatInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-28px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes floatInRight {
-  from {
-    opacity: 0;
-    transform: translateX(28px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes floatInTop {
-  from {
-    opacity: 0;
-    transform: translateY(-24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes floatInBottom {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* 手机端位移减轻一点，避免左右晃动太明显 */
-@media (max-width: 768px) {
-  @keyframes floatInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes floatInRight {
-    from {
-      opacity: 0;
-      transform: translateX(16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
-/* 尊重系统的减少动画设置 */
-@media (prefers-reduced-motion: reduce) {
+  /* 初始状态：先隐藏并轻微位移 */
   .wg-about #profile .portrait-title,
   .wg-about #profile .network-icon,
   .wg-about .col-12.col-lg-8 > h1,
   .wg-about .article-style > p,
   .wg-about .col-md-5,
   .wg-about .col-md-7 {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-duration: 0.85s;
+    animation-timing-function: cubic-bezier(.22, .61, .36, 1);
   }
-}
+  
+  /* 头像以下：姓名、身份、学校、社交图标，从左往右 */
+  .wg-about #profile .portrait-title {
+    animation-name: floatInLeft;
+    animation-delay: 0.10s;
+  }
+  
+  .wg-about #profile .network-icon {
+    animation-name: floatInLeft;
+    animation-delay: 0.22s;
+  }
+  
+  /* About Me + 正文 + Download CV，从上往下 */
+  .wg-about .col-12.col-lg-8 > h1 {
+    animation-name: floatInTop;
+    animation-delay: 0.12s;
+  }
+  
+  .wg-about .article-style > p {
+    animation-name: floatInTop;
+    animation-delay: 0.24s;
+  }
+  
+  /* Interests + bullet points，从下往上 */
+  .wg-about .col-md-5 {
+    animation-name: floatInBottom;
+    animation-delay: 0.36s;
+  }
+  
+  /* Education + pinpoints，从右往左 */
+  .wg-about .col-md-7 {
+    animation-name: floatInRight;
+    animation-delay: 0.44s;
+  }
+  
+  /* 动画定义 */
+  @keyframes floatInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes floatInRight {
+    from {
+      opacity: 0;
+      transform: translateX(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes floatInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes floatInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 手机端位移减轻一点，避免左右晃动太明显 */
+  @media (max-width: 768px) {
+    @keyframes floatInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    @keyframes floatInRight {
+      from {
+        opacity: 0;
+        transform: translateX(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+  
+  /* 尊重系统的减少动画设置 */
+  @media (prefers-reduced-motion: reduce) {
+    .wg-about #profile .portrait-title,
+    .wg-about #profile .network-icon,
+    .wg-about .col-12.col-lg-8 > h1,
+    .wg-about .article-style > p,
+    .wg-about .col-md-5,
+    .wg-about .col-md-7 {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
 </style>
 
 
