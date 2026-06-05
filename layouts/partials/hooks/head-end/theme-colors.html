@@ -72,170 +72,204 @@
   .btn-cta:focus-visible{
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 60%, transparent);
   }
-
-   /* ===== Homepage About entrance animation ===== */
   
-  /* 左侧头像以下：姓名、中文名、身份、学校、社交图标 */
-  .home-section:first-of-type #profile .portrait-title,
-  .home-section:first-of-type #profile .network-icon {
-    opacity: 0;
-    animation: aboutSlideLeft 0.8s cubic-bezier(.22,.61,.36,1) forwards;
-  }
-  
-  .home-section:first-of-type #profile .portrait-title {
-    animation-delay: 0.12s;
-  }
-  
-  .home-section:first-of-type #profile .network-icon {
-    animation-delay: 0.28s;
-  }
-  
-  /* About Me 标题、正文、Download CV：从上往下 */
-  .home-section:first-of-type h1,
-  .home-section:first-of-type .article-style,
-  .home-section:first-of-type .prose,
-  .home-section:first-of-type .btn,
-  .home-section:first-of-type .btn-links {
-    opacity: 0;
-    animation: aboutSlideTop 0.8s cubic-bezier(.22,.61,.36,1) forwards;
-  }
-  
-  .home-section:first-of-type h1 {
-    animation-delay: 0.10s;
-  }
-  
-  .home-section:first-of-type .article-style,
-  .home-section:first-of-type .prose {
-    animation-delay: 0.22s;
-  }
-  
-  .home-section:first-of-type .btn,
-  .home-section:first-of-type .btn-links {
-    animation-delay: 0.34s;
-  }
-  
-  /* Interests：从下往上 */
-  .home-section:first-of-type .ul-interests,
-  .home-section:first-of-type .ul-interests li {
-    opacity: 0;
-    animation: aboutSlideBottom 0.8s cubic-bezier(.22,.61,.36,1) forwards;
-  }
-  
-  .home-section:first-of-type .ul-interests {
-    animation-delay: 0.38s;
-  }
-  
-  .home-section:first-of-type .ul-interests li:nth-child(1) { animation-delay: 0.42s; }
-  .home-section:first-of-type .ul-interests li:nth-child(2) { animation-delay: 0.48s; }
-  .home-section:first-of-type .ul-interests li:nth-child(3) { animation-delay: 0.54s; }
-  .home-section:first-of-type .ul-interests li:nth-child(4) { animation-delay: 0.60s; }
-  .home-section:first-of-type .ul-interests li:nth-child(5) { animation-delay: 0.66s; }
-  
-  /* Education：从右往左 */
-  .home-section:first-of-type .ul-edu,
-  .home-section:first-of-type .ul-edu li {
-    opacity: 0;
-    animation: aboutSlideRight 0.8s cubic-bezier(.22,.61,.36,1) forwards;
-  }
-  
-  .home-section:first-of-type .ul-edu {
-    animation-delay: 0.42s;
-  }
-  
-  .home-section:first-of-type .ul-edu li:nth-child(1) { animation-delay: 0.46s; }
-  .home-section:first-of-type .ul-edu li:nth-child(2) { animation-delay: 0.52s; }
-  .home-section:first-of-type .ul-edu li:nth-child(3) { animation-delay: 0.58s; }
-  .home-section:first-of-type .ul-edu li:nth-child(4) { animation-delay: 0.64s; }
-  
-  /* 动效方向 */
-  @keyframes aboutSlideLeft {
-    from {
+     /* ===== Homepage About entrance animation ===== */
+    
+    /* 左侧头像以下：姓名、中文名、身份、学校、社交图标 */
+    .home-section:first-of-type #profile .portrait-title,
+    .home-section:first-of-type #profile .network-icon {
       opacity: 0;
-      transform: translateX(-32px);
+      animation: aboutSlideLeft 0.8s cubic-bezier(.22,.61,.36,1) forwards;
     }
-    to {
-      opacity: 1;
-      transform: translateX(0);
+    
+    .home-section:first-of-type #profile .portrait-title {
+      animation-delay: 0.12s;
     }
-  }
-  
-  @keyframes aboutSlideRight {
-    from {
+    
+    .home-section:first-of-type #profile .network-icon {
+      animation-delay: 0.28s;
+    }
+    
+    /* About Me 标题、正文、Download CV：从上往下 */
+    .home-section:first-of-type h1,
+    .home-section:first-of-type .article-style,
+    .home-section:first-of-type .prose,
+    .home-section:first-of-type .btn,
+    .home-section:first-of-type .btn-links {
       opacity: 0;
-      transform: translateX(32px);
+      animation: aboutSlideTop 0.8s cubic-bezier(.22,.61,.36,1) forwards;
     }
-    to {
-      opacity: 1;
-      transform: translateX(0);
+    
+    .home-section:first-of-type h1 {
+      animation-delay: 0.10s;
     }
-  }
-  
-  @keyframes aboutSlideTop {
-    from {
+    
+    .home-section:first-of-type .article-style,
+    .home-section:first-of-type .prose {
+      animation-delay: 0.22s;
+    }
+    
+    .home-section:first-of-type .btn,
+    .home-section:first-of-type .btn-links {
+      animation-delay: 0.34s;
+    }
+    
+    /* Interests：从下往上 */
+    .home-section:first-of-type .ul-interests,
+    .home-section:first-of-type .ul-interests li {
       opacity: 0;
-      transform: translateY(-28px);
+      animation: aboutSlideBottom 0.8s cubic-bezier(.22,.61,.36,1) forwards;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+    
+    .home-section:first-of-type .ul-interests {
+      animation-delay: 0.38s;
     }
-  }
-  
-  @keyframes aboutSlideBottom {
-    from {
+    
+    .home-section:first-of-type .ul-interests li:nth-child(1) { animation-delay: 0.42s; }
+    .home-section:first-of-type .ul-interests li:nth-child(2) { animation-delay: 0.48s; }
+    .home-section:first-of-type .ul-interests li:nth-child(3) { animation-delay: 0.54s; }
+    .home-section:first-of-type .ul-interests li:nth-child(4) { animation-delay: 0.60s; }
+    .home-section:first-of-type .ul-interests li:nth-child(5) { animation-delay: 0.66s; }
+    
+    /* Education：从右往左 */
+    .home-section:first-of-type .ul-edu,
+    .home-section:first-of-type .ul-edu li {
       opacity: 0;
-      transform: translateY(28px);
+      animation: aboutSlideRight 0.8s cubic-bezier(.22,.61,.36,1) forwards;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+    
+    .home-section:first-of-type .ul-edu {
+      animation-delay: 0.42s;
     }
-  }
-  
-  /* 手机端位移减小 */
-  @media (max-width: 768px) {
+    
+    .home-section:first-of-type .ul-edu li:nth-child(1) { animation-delay: 0.46s; }
+    .home-section:first-of-type .ul-edu li:nth-child(2) { animation-delay: 0.52s; }
+    .home-section:first-of-type .ul-edu li:nth-child(3) { animation-delay: 0.58s; }
+    .home-section:first-of-type .ul-edu li:nth-child(4) { animation-delay: 0.64s; }
+    
+    /* 动效方向 */
     @keyframes aboutSlideLeft {
       from {
         opacity: 0;
-        transform: translateX(-18px);
+        transform: translateX(-32px);
       }
       to {
         opacity: 1;
         transform: translateX(0);
       }
     }
-  
+    
     @keyframes aboutSlideRight {
       from {
         opacity: 0;
-        transform: translateX(18px);
+        transform: translateX(32px);
       }
       to {
         opacity: 1;
         transform: translateX(0);
       }
     }
-  
+    
     @keyframes aboutSlideTop {
       from {
         opacity: 0;
-        transform: translateY(-18px);
+        transform: translateY(-28px);
       }
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-  
+    
     @keyframes aboutSlideBottom {
       from {
         opacity: 0;
-        transform: translateY(18px);
+        transform: translateY(28px);
       }
       to {
         opacity: 1;
         transform: translateY(0);
       }
+    }
+    
+    /* 手机端位移减小 */
+    @media (max-width: 768px) {
+      @keyframes aboutSlideLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    
+      @keyframes aboutSlideRight {
+        from {
+          opacity: 0;
+          transform: translateX(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    
+      @keyframes aboutSlideTop {
+        from {
+          opacity: 0;
+          transform: translateY(-18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      @keyframes aboutSlideBottom {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    /* ===== Scroll reveal for Markdown homepage sections ===== */
+  
+  .markdown-section-reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition:
+      opacity 0.85s cubic-bezier(.22,.61,.36,1),
+      transform 0.85s cubic-bezier(.22,.61,.36,1);
+    will-change: opacity, transform;
+  }
+  
+  .markdown-section-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 每个 section 之间留一点空间 */
+  .markdown-section-reveal + .markdown-section-reveal {
+    margin-top: 2.2rem;
+  }
+  
+  /* 标题更干净一点 */
+  .markdown-section-reveal h2 {
+    margin-top: 0;
+  }
+  
+  /* 减少动画设置 */
+  @media (prefers-reduced-motion: reduce) {
+    .markdown-section-reveal {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
     }
   }
 </style>
