@@ -1,16 +1,21 @@
 <style>
-  /* ===== Clean white + soft gray theme ===== */
+  /* =========================================================
+     Wenwen Guo personal website
+     White background + black text + right-side section nav
+     ========================================================= */
 
   :root {
-    --brand: #9CA3AF;
-    --brand-weak: #F4F4F5;
     --surface: #FFFFFF;
     --surface-alt: #F4F4F5;
     --border: #E5E7EB;
-    --text: #111827;
+    --text: #000000;
     --muted: #6B7280;
-    --link: #2563EB;
+    --hover: #6B7280;
     --max-width: 1080px;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   html,
@@ -23,31 +28,54 @@
     display: none !important;
   }
 
-  /* ===== Header / Navigation ===== */
+  /* =========================================================
+     Header
+     ========================================================= */
 
   #site-header.header,
   .navbar,
   .navbar-light,
   header {
-    background-color: var(--surface) !important;
+    background: #FFFFFF !important;
     border-bottom: 1px solid var(--border);
     box-shadow: none !important;
   }
 
-  .nav-link,
-  .navbar-nav .nav-link {
-    color: var(--text) !important;
-    font-weight: 500;
+  /* Keep site name */
+  .navbar-brand,
+  .navbar .navbar-brand,
+  header a[href="/"],
+  header a[href="./"] {
+    color: #000000 !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
   }
 
-  .nav-link:hover,
-  .navbar-nav .nav-link:hover,
-  .hover\:text-primary-700:hover,
-  :is(.dark .nav-link:hover) {
-    color: var(--brand) !important;
+  /* Hide top center menu */
+  .navbar-nav,
+  .navbar .navbar-nav,
+  #navbar-main,
+  .nav-menu,
+  .nav-links,
+  header nav ul,
+  header .nav-item,
+  header .menu {
+    display: none !important;
   }
 
-  /* ===== Page width and base layout ===== */
+  /* Keep theme toggle if the template has one */
+  .dark-toggle,
+  .theme-toggle,
+  button[aria-label*="theme"],
+  button[aria-label*="Theme"],
+  button[aria-label*="dark"],
+  button[aria-label*="Dark"] {
+    display: inline-flex !important;
+  }
+
+  /* =========================================================
+     Page width and layout
+     ========================================================= */
 
   main,
   .page-wrapper,
@@ -63,15 +91,41 @@
 
   .home-section,
   section {
-    background: var(--surface) !important;
+    background: #FFFFFF !important;
   }
 
-  /* ===== Text and links ===== */
+  /* Give content room for right bar on large screens */
+  @media (min-width: 1200px) {
+    .wg-about .article-style,
+    .wg-about .prose,
+    .wg-about article,
+    .article-style,
+    .prose,
+    article {
+      padding-right: 230px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .wg-about .article-style,
+    .wg-about .prose,
+    .wg-about article,
+    .article-style,
+    .prose,
+    article {
+      padding-right: 0 !important;
+    }
+  }
+
+  /* =========================================================
+     Typography
+     ========================================================= */
 
   h1,
   h2,
-  h3 {
-    color: var(--text) !important;
+  h3,
+  h4 {
+    color: #000000 !important;
     letter-spacing: -0.02em;
   }
 
@@ -82,39 +136,86 @@
     margin-bottom: 1.15rem;
   }
 
-  a {
-    color: var(--link);
-    text-underline-offset: 3px;
+  p,
+  li {
+    color: #000000;
   }
 
-  a:hover {
-    color: var(--text) !important;
+  .article-style p,
+  .prose p,
+  .markdown p {
+    line-height: 1.75;
   }
 
+  .article-style li,
+  .prose li,
+  .markdown li {
+    margin-bottom: 0.55rem;
+  }
+
+  /* =========================================================
+     Links: black + bold, gray on hover
+     ========================================================= */
+
+  a,
   .prose a,
-  .article-style a {
-    color: var(--link);
+  .article-style a,
+  .markdown a {
+    color: #000000 !important;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    background-image: none !important;
   }
 
+  a:hover,
   .prose a:hover,
-  .article-style a:hover {
-    color: var(--text) !important;
+  .article-style a:hover,
+  .markdown a:hover {
+    color: var(--hover) !important;
+    text-decoration-color: var(--hover);
   }
 
   .gradient-underline,
-  .prose a {
-    background-image: linear-gradient(var(--brand), var(--brand));
+  .prose a,
+  .article-style a {
+    background-image: none !important;
   }
 
-  .border-s {
-    border-color: var(--border) !important;
+  /* =========================================================
+     Download CV button
+     ========================================================= */
+
+  a[href$="CV_Wenwen_Guo.pdf"],
+  a[href*="CV_Wenwen_Guo.pdf"] {
+    display: inline-block;
+    margin-top: 0.4rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: #000000 !important;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition:
+      background 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      transform 0.25s ease;
   }
 
-  .tl-dot::after {
-    box-shadow: 0 0 0 0 color-mix(in srgb, var(--brand) 30%, transparent);
+  a[href$="CV_Wenwen_Guo.pdf"]:hover,
+  a[href*="CV_Wenwen_Guo.pdf"]:hover {
+    background: var(--surface-alt);
+    color: var(--hover) !important;
+    border-color: #D1D5DB;
+    transform: translateY(-1px);
   }
 
-  /* ===== Cards / blocks if any old template elements remain ===== */
+  /* =========================================================
+     Remove old template card feeling
+     ========================================================= */
 
   .section-card,
   .card,
@@ -135,46 +236,9 @@
     box-shadow: none !important;
   }
 
-  .section-card {
-    background: var(--surface-alt) !important;
-    border: 1px solid var(--border);
-    border-radius: 1rem;
-    padding: 1.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    .section-card {
-      padding: 2rem;
-    }
-  }
-
-  /* ===== Download CV button ===== */
-
-  a[href$="CV_Wenwen_Guo.pdf"],
-  a[href*="CV_Wenwen_Guo.pdf"] {
-    display: inline-block;
-    margin-top: 0.4rem;
-    padding: 0.65rem 1rem;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--surface-alt);
-    color: var(--text) !important;
-    font-weight: 600;
-    text-decoration: none !important;
-    transition:
-      background 0.25s ease,
-      border-color 0.25s ease,
-      transform 0.25s ease;
-  }
-
-  a[href$="CV_Wenwen_Guo.pdf"]:hover,
-  a[href*="CV_Wenwen_Guo.pdf"]:hover {
-    background: #FFFFFF;
-    border-color: #D1D5DB;
-    transform: translateY(-1px);
-  }
-
-  /* ===== Profile block animation: left to right ===== */
+  /* =========================================================
+     Profile block entrance: left to right
+     ========================================================= */
 
   #profile {
     opacity: 0;
@@ -195,7 +259,9 @@
     }
   }
 
-  /* ===== Scroll reveal for Markdown homepage sections ===== */
+  /* =========================================================
+     Scroll reveal for Markdown sections
+     ========================================================= */
 
   .markdown-section-reveal {
     opacity: 0;
@@ -219,30 +285,90 @@
     margin-top: 0;
   }
 
-  /* ===== Lists and spacing ===== */
+  /* =========================================================
+     Right-side section navigation
+     ========================================================= */
 
-  .article-style li,
-  .prose li,
-  .markdown li {
-    margin-bottom: 0.55rem;
+  #right-section-nav {
+    position: fixed;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    width: 205px;
+    padding: 14px 12px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 32px rgba(17, 24, 39, 0.08);
   }
 
-  .article-style p,
-  .prose p,
-  .markdown p {
-    line-height: 1.75;
+  #right-section-nav .right-nav-title {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.7rem;
   }
 
-  /* ===== Footer ===== */
+  #right-section-nav .right-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  #right-section-nav a {
+    display: block;
+    padding: 0.52rem 0.7rem;
+    border-left: 2px solid transparent;
+    border-radius: 10px;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 0.93rem;
+    font-weight: 700;
+    line-height: 1.35;
+    transition:
+      background 0.22s ease,
+      color 0.22s ease,
+      border-color 0.22s ease,
+      transform 0.22s ease;
+  }
+
+  #right-section-nav a:hover {
+    background: var(--surface-alt);
+    color: var(--hover) !important;
+    transform: translateX(-2px);
+  }
+
+  #right-section-nav a.is-active {
+    background: var(--surface-alt);
+    color: #000000 !important;
+    border-left-color: #000000;
+    font-weight: 800;
+  }
+
+  @media (max-width: 1199px) {
+    #right-section-nav {
+      display: none !important;
+    }
+  }
+
+  /* =========================================================
+     Footer
+     ========================================================= */
 
   footer,
   .site-footer {
-    background: var(--surface) !important;
+    background: #FFFFFF !important;
     border-top: 1px solid var(--border);
     color: var(--muted);
   }
 
-  /* ===== Mobile adjustments ===== */
+  /* =========================================================
+     Mobile
+     ========================================================= */
 
   @media (max-width: 768px) {
     #profile {
@@ -265,7 +391,9 @@
     }
   }
 
-  /* ===== Reduced motion ===== */
+  /* =========================================================
+     Reduced motion
+     ========================================================= */
 
   @media (prefers-reduced-motion: reduce) {
     #profile,
@@ -280,6 +408,10 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  /* =========================================================
+     1. Wrap each Markdown H2 section for scroll reveal
+     ========================================================= */
+
   const aboutWidget = document.querySelector(".wg-about");
   const containers = aboutWidget
     ? aboutWidget.querySelectorAll(".article-style, .prose, .markdown, article")
@@ -319,27 +451,105 @@ document.addEventListener("DOMContentLoaded", function () {
     revealItems.forEach(function (item) {
       item.classList.add("is-visible");
     });
-    return;
+  } else {
+    const revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: "0px 0px -80px 0px"
+      }
+    );
+
+    revealItems.forEach(function (item, index) {
+      item.style.transitionDelay = Math.min(index * 0.06, 0.3) + "s";
+      revealObserver.observe(item);
+    });
   }
 
-  const observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.15,
-      rootMargin: "0px 0px -80px 0px"
-    }
-  );
+  /* =========================================================
+     2. Build right-side navigation from revealed sections
+     ========================================================= */
 
-  revealItems.forEach(function (item, index) {
-    item.style.transitionDelay = Math.min(index * 0.06, 0.3) + "s";
-    observer.observe(item);
+  const oldNav = document.getElementById("right-section-nav");
+  if (oldNav) oldNav.remove();
+
+  const sections = Array.from(document.querySelectorAll(".markdown-section-reveal"))
+    .filter(function (section) {
+      return section.querySelector("h2");
+    });
+
+  if (!sections.length) return;
+
+  const nav = document.createElement("nav");
+  nav.id = "right-section-nav";
+  nav.setAttribute("aria-label", "Section navigation");
+  nav.innerHTML = `
+    <div class="right-nav-title">On this page</div>
+    <div class="right-nav-links"></div>
+  `;
+
+  const navLinksContainer = nav.querySelector(".right-nav-links");
+
+  sections.forEach(function (section, index) {
+    const heading = section.querySelector("h2");
+    if (!heading) return;
+
+    if (!section.id) {
+      section.id = "section-" + (index + 1);
+    }
+
+    const link = document.createElement("a");
+    link.href = "#" + section.id;
+    link.textContent = heading.textContent.trim();
+
+    navLinksContainer.appendChild(link);
   });
+
+  document.body.appendChild(nav);
+
+  const links = Array.from(nav.querySelectorAll("a"));
+
+  function setActive(id) {
+    links.forEach(function (link) {
+      link.classList.toggle("is-active", link.getAttribute("href") === "#" + id);
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    const navObserver = new IntersectionObserver(
+      function (entries) {
+        const visibleEntries = entries
+          .filter(function (entry) {
+            return entry.isIntersecting;
+          })
+          .sort(function (a, b) {
+            return b.intersectionRatio - a.intersectionRatio;
+          });
+
+        if (visibleEntries.length > 0) {
+          setActive(visibleEntries[0].target.id);
+        }
+      },
+      {
+        rootMargin: "-20% 0px -55% 0px",
+        threshold: [0.15, 0.3, 0.5, 0.75]
+      }
+    );
+
+    sections.forEach(function (section) {
+      navObserver.observe(section);
+    });
+  }
+
+  if (sections[0]) {
+    setActive(sections[0].id);
+  }
 });
 </script>
