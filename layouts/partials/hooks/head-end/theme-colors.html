@@ -1,7 +1,7 @@
 <style>
   /* =========================================================
      Wenwen Guo personal website
-     White background + black text + right section navigation
+     White background + black text + plain right navigation
      ========================================================= */
 
   :root {
@@ -50,7 +50,6 @@
     text-decoration: none !important;
   }
 
-  /* Hide top menu items, keep site title and theme icon */
   .navbar-nav,
   .navbar .navbar-nav,
   #navbar-main .navbar-nav,
@@ -79,28 +78,6 @@
   .home-section,
   section {
     background: #ffffff !important;
-  }
-
-  @media (min-width: 1200px) {
-    .wg-about .article-style,
-    .wg-about .prose,
-    .wg-about article,
-    .article-style,
-    .prose,
-    article {
-      padding-right: 250px !important;
-    }
-  }
-
-  @media (max-width: 1199px) {
-    .wg-about .article-style,
-    .wg-about .prose,
-    .wg-about article,
-    .article-style,
-    .prose,
-    article {
-      padding-right: 0 !important;
-    }
   }
 
   /* =========================================================
@@ -205,7 +182,7 @@
   }
 
   /* =========================================================
-     Remove old card look
+     Remove old template card look
      ========================================================= */
 
   .section-card,
@@ -244,6 +221,7 @@
       opacity: 0;
       transform: translateX(-48px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -277,68 +255,62 @@
   }
 
   /* =========================================================
-     Right-side navigation
+     Plain right-side navigation
      ========================================================= */
 
   #right-section-nav {
     position: fixed !important;
-    right: 28px !important;
+    right: 42px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
     z-index: 99999 !important;
-    width: 215px !important;
-    padding: 14px 12px !important;
-    border: 1px solid var(--border) !important;
-    border-radius: 16px !important;
-    background: rgba(255, 255, 255, 0.96) !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 12px 32px rgba(17, 24, 39, 0.08) !important;
+    width: 190px !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
     display: block !important;
   }
 
   #right-section-nav .right-nav-title {
-    font-size: 0.78rem !important;
-    font-weight: 800 !important;
-    color: var(--muted) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.06em !important;
-    margin-bottom: 0.7rem !important;
+    display: none !important;
   }
 
   #right-section-nav .right-nav-links {
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.25rem !important;
+    gap: 0.48rem !important;
   }
 
   #right-section-nav a {
     display: block !important;
-    padding: 0.52rem 0.7rem !important;
-    border-left: 2px solid transparent !important;
-    border-radius: 10px !important;
-    color: #000000 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #6b7280 !important;
     text-decoration: none !important;
-    font-size: 0.93rem !important;
-    font-weight: 700 !important;
+    font-size: 0.92rem !important;
+    font-weight: 400 !important;
     line-height: 1.35 !important;
     transition:
-      background 0.22s ease,
-      color 0.22s ease,
-      border-color 0.22s ease,
-      transform 0.22s ease !important;
+      color 0.2s ease,
+      font-weight 0.2s ease !important;
   }
 
   #right-section-nav a:hover {
-    background: var(--surface-alt) !important;
-    color: var(--hover) !important;
-    transform: translateX(-2px);
+    background: transparent !important;
+    color: #000000 !important;
+    transform: none !important;
   }
 
   #right-section-nav a.is-active {
-    background: var(--surface-alt) !important;
+    background: transparent !important;
     color: #000000 !important;
-    border-left-color: #000000 !important;
     font-weight: 800 !important;
+    border: none !important;
   }
 
   @media (max-width: 1199px) {
@@ -372,6 +344,7 @@
         opacity: 0;
         transform: translateX(-28px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
@@ -428,7 +401,7 @@
              !heading.closest("#right-section-nav");
     });
 
-    headings.forEach(function (heading, index) {
+    headings.forEach(function (heading) {
       if (heading.closest(".markdown-section-reveal")) return;
 
       const wrapper = document.createElement("section");
@@ -554,6 +527,7 @@
 
       sections.forEach(function (section) {
         const rect = section.getBoundingClientRect();
+
         if (rect.top <= 180) {
           activeSection = section;
         }
