@@ -257,6 +257,16 @@
     background: #ffffff !important;
     border-top: 1px solid var(--border) !important;
     color: var(--muted) !important;
+    text-align: center !important;
+    padding: 1.5rem 0 !important;
+  }
+
+  footer p,
+  .site-footer p,
+  footer div,
+  .site-footer div {
+    color: var(--muted) !important;
+    font-size: 0.9rem !important;
   }
 
   @media (max-width: 768px) {
@@ -465,44 +475,11 @@
     window.addEventListener("resize", updateActive);
   }
 
-  function cleanFooterCreditOnly() {
+  function setFooterText() {
     const footer = document.querySelector("footer, .site-footer");
     if (!footer) return;
 
-    const walker = document.createTreeWalker(
-      footer,
-      NodeFilter.SHOW_TEXT,
-      null
-    );
-
-    const textNodes = [];
-
-    while (walker.nextNode()) {
-      textNodes.push(walker.currentNode);
-    }
-
-    textNodes.forEach(function (node) {
-      node.nodeValue = node.nodeValue
-        .replace(/Published with Hugo Blox Builder/gi, "")
-        .replace(/the free, open source website builder that empowers creators\.?/gi, "")
-        .replace(/—\s*\./g, "")
-        .replace(/—\s*/g, "")
-        .replace(/\s{2,}/g, " ");
-    });
-
-    Array.from(footer.querySelectorAll("a")).forEach(function (link) {
-      const text = (link.textContent || "").trim().toLowerCase();
-      const href = (link.getAttribute("href") || "").toLowerCase();
-
-      if (
-        text.includes("hugo blox builder") ||
-        text.includes("wowchemy") ||
-        href.includes("hugoblox") ||
-        href.includes("wowchemy")
-      ) {
-        link.remove();
-      }
-    });
+    footer.innerHTML = "<p>© 2026 Wenwen Guo. All rights reserved. ♥ Liangwang</p>";
   }
 
   function init() {
@@ -511,7 +488,7 @@
 
     revealSections(sections);
     buildRightNav(sections);
-    cleanFooterCreditOnly();
+    setFooterText();
   }
 
   if (document.readyState === "loading") {
