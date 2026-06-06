@@ -46,13 +46,13 @@ Wenwen Guo is a PhD student at the School of Journalism and Communication, Tsing
 
 ## Selected Publications
 
-- Guo, W., & Kroon, A. C. (2026). Framing disability in sport journalism: A cross-national automated framing analysis of Paralympic news (2012–2024). *Journalism*, 0(0). https://doi.org/10.1177/14648849261438227
+- **Guo, W.**, & Kroon, A. C. (2026). Framing disability in sport journalism: A cross-national automated framing analysis of Paralympic news (2012–2024). *Journalism*, 0(0). https://doi.org/10.1177/14648849261438227
 
-- Guo, W., & Liu, Y. (in press). (De)colonizing climate discourse: Alternative narratives and multi-level framing of Net Zero across the Global North and South (2015–2024). *Journalism Studies*. https://doi.org/10.1080/1461670X.2026.2684762
+- **Guo, W.**, & Liu, Y. (in press). (De)colonizing climate discourse: Alternative narratives and multi-level framing of Net Zero across the Global North and South (2015–2024). *Journalism Studies*. https://doi.org/10.1080/1461670X.2026.2684762
 
-- Liu, Y., & Guo, W. (in press). Are organizational resources always protective? Journalists’ job burnout and life satisfaction under collectivistic contexts. *Journalism & Mass Communication Quarterly*. https://doi.org/10.1177/10776990261457637
+- Liu, Y., & **Guo, W.** (in press). Are organizational resources always protective? Journalists’ job burnout and life satisfaction under collectivistic contexts. *Journalism & Mass Communication Quarterly*. https://doi.org/10.1177/10776990261457637
 
-- Zhou, Q., & Guo, W. (2025). 智能时代国际传播效能评估的全球比较与实践 [A global comparison of measuring international communication efficacy in the intelligent era]. *现代出版 [Modern Publishing]*, (10), 24–36.
+- Zhou, Q., & **Guo, W.** (2025). 智能时代国际传播效能评估的全球比较与实践 [A global comparison of measuring international communication efficacy in the intelligent era]. *现代出版 [Modern Publishing]*, (10), 24–36.
 
 ## Education
 
@@ -73,21 +73,21 @@ Major GPA: 3.75/4.00, Distinction
 
 ## Selected Conference Presentations
 
-- Guo, W., & Ruan, L. (2026, June 4–8). *Co-creating cybernetic borders: Mapping immigrant acculturation and public conditioned gatekeeping through elite transnational Olympians’ social media*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa.
+- **Guo, W.**, & Ruan, L. (2026, June 4–8). *Co-creating cybernetic borders: Mapping immigrant acculturation and public conditioned gatekeeping through elite transnational Olympians’ social media*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa.
 
-- Guo, W., & Kroon, A. C. (2026, June 4–8). *Framing disability in Paralympic news coverage: A ternary viewpoint*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa.
+- **Guo, W.**, & Kroon, A. C. (2026, June 4–8). *Framing disability in Paralympic news coverage: A ternary viewpoint*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa.
 
-- Boukes, M., Qin, A., Blanco-Herrero, D., Guo, W., Liu, Y., Strömbäck, J., Park, S., Uth, B., Theorin, N., Møller, L. A., Nah, S., Boomgaarden, H., Rasul, A., Fletcher, R., Tandoc, E., Amores, J., Lee, T.-T., Boursier, A., Mogos, A., ... Chuma, W. (2026, June 4–8). *Distinguishing news media trust, skepticism, and cynicism through elaboration: Toward a global typology of distrustors, mistrustors, automatic trustors, and engaged trustors*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa. Top Paper, Journalism Studies Division.
+- Boukes, M., Qin, A., Blanco-Herrero, D., **Guo, W.**, Liu, Y., Strömbäck, J., Park, S., Uth, B., Theorin, N., Møller, L. A., Nah, S., Boomgaarden, H., Rasul, A., Fletcher, R., Tandoc, E., Amores, J., Lee, T.-T., Boursier, A., Mogos, A., ... Chuma, W. (2026, June 4–8). *Distinguishing news media trust, skepticism, and cynicism through elaboration: Toward a global typology of distrustors, mistrustors, automatic trustors, and engaged trustors*. 76th Annual Conference of the International Communication Association (ICA), Cape Town, South Africa. Top Paper, Journalism Studies Division.
 
-- Guo, W., & Liu, Y. (2025, July 13–17). *Framing climate news through the MICKEY framework: A decolonial analysis across Global North and South (2015–2024)*. International Association for Media and Communication Research (IAMCR) 2025, Singapore.
+- **Guo, W.**, & Liu, Y. (2025, July 13–17). *Framing climate news through the MICKEY framework: A decolonial analysis across Global North and South (2015–2024)*. International Association for Media and Communication Research (IAMCR) 2025, Singapore.
 
-- Boukes, M., Blanco-Herrero, D., & Guo, W. (2024, September 24–27). *Restoring trust in journalism: A cross-country investigation into the impact of journalistic repair strategies*. The 10th European Communication Conference (ECREA) 2024, Ljubljana, Slovenia.
+- Boukes, M., Blanco-Herrero, D., & **Guo, W.** (2024, September 24–27). *Restoring trust in journalism: A cross-country investigation into the impact of journalistic repair strategies*. The 10th European Communication Conference (ECREA) 2024, Ljubljana, Slovenia.
 
-- Loecherbach, F., & Guo, W. (2024, October 10). *Dissecting digital natives’ political preferences: Election campaigns and YouTube media exposure*. The ODISSEI Conference for Social Science, Utrecht, The Netherlands.
+- Loecherbach, F., & **Guo, W.** (2024, October 10). *Dissecting digital natives’ political preferences: Election campaigns and YouTube media exposure*. The ODISSEI Conference for Social Science, Utrecht, The Netherlands.
 
-- Boukes, M., & Guo, W. (2024, June 20–24). *Multi-country experiment on journalistic repair strategies to restore trust in the news media: A call for collaborators and feedback on the experimental design*. 74th Annual Conference of the International Communication Association (ICA), Gold Coast, QLD, Australia. Top Extended Abstract Award, Journalism Studies Division.
+- Boukes, M., & **Guo, W.** (2024, June 20–24). *Multi-country experiment on journalistic repair strategies to restore trust in the news media: A call for collaborators and feedback on the experimental design*. 74th Annual Conference of the International Communication Association (ICA), Gold Coast, QLD, Australia. Top Extended Abstract Award, Journalism Studies Division.
 
-- Guo, W. (2025, November 22–23). 主流媒体系统性变革中的跨媒介议程设置 [Cross-media agenda setting amid the systematic transformation of mainstream media]. 中国新闻史学会 2025 年学术年会 [2025 Annual Conference of the China Journalism History Society], Chongqing, China.
+- **Guo, W.** (2025, November 22–23). 主流媒体系统性变革中的跨媒介议程设置 [Cross-media agenda setting amid the systematic transformation of mainstream media]. 中国新闻史学会 2025 年学术年会 [2025 Annual Conference of the China Journalism History Society], Chongqing, China.
 
 ## Research Projects
 
@@ -117,21 +117,21 @@ Supervisor: [Dr. F. (Felicia) Loecherbach](https://www.uva.nl/en/profile/l/o/f.l
 
 ## Awards
 
-- Excellent Graduate, Peking University.
+- Excellent Graduate, Peking University, 2022
 
-- Excellent Graduate of the School of Journalism and Communication, Peking University.
+- Excellent Graduate of the School of Journalism and Communication, Peking University, 2022
 
-- Award for Outstanding Contribution to Volunteer Service, Beijing 2022 Winter Olympics and Paralympics, Peking University.
+- Award for Outstanding Contribution to Volunteer Service, Beijing 2022 Winter Olympics and Paralympics, Peking University, 2022
 
-- Merit Student of Peking University.
+- Merit Student of Peking University, 2022
 
-- Third-Class Scholarship for Peking University.
+- Third-Class Scholarship for Peking University, 2022
 
-- Award for Scientific Research.
+- Award for Scientific Research, 2021
 
-- Award for Contribution in Student Organizations.
+- Award for Contribution in Student Organizations, 2020
 
-- Scholarship by People’s Daily Online.
+- Scholarship by People’s Daily Online, 2019
 
 ## Industry Experience
 
