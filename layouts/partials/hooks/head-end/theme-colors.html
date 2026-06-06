@@ -1,27 +1,27 @@
 <style>
   /* =========================================================
      Wenwen Guo personal website
-     White background + black text + right-side section nav
+     White background + black text + right section navigation
      ========================================================= */
 
   :root {
-    --surface: #FFFFFF;
-    --surface-alt: #F4F4F5;
-    --border: #E5E7EB;
+    --surface: #ffffff;
+    --surface-alt: #f4f4f5;
+    --border: #e5e7eb;
     --text: #000000;
-    --muted: #6B7280;
-    --hover: #6B7280;
+    --muted: #6b7280;
+    --hover: #6b7280;
     --max-width: 1080px;
   }
 
   html {
     scroll-behavior: smooth;
+    background: #ffffff !important;
   }
 
-  html,
   body {
-    background: var(--surface) !important;
-    color: var(--text) !important;
+    background: #ffffff !important;
+    color: #000000 !important;
   }
 
   body::before {
@@ -36,12 +36,11 @@
   .navbar,
   .navbar-light,
   header {
-    background: #FFFFFF !important;
-    border-bottom: 1px solid var(--border);
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--border) !important;
     box-shadow: none !important;
   }
 
-  /* Keep site name */
   .navbar-brand,
   .navbar .navbar-brand,
   header a[href="/"],
@@ -51,30 +50,18 @@
     text-decoration: none !important;
   }
 
-  /* Hide top center menu */
+  /* Hide top menu items, keep site title and theme icon */
   .navbar-nav,
   .navbar .navbar-nav,
-  #navbar-main,
-  .nav-menu,
-  .nav-links,
-  header nav ul,
+  #navbar-main .navbar-nav,
   header .nav-item,
-  header .menu {
+  header .menu,
+  header nav ul {
     display: none !important;
   }
 
-  /* Keep theme toggle if the template has one */
-  .dark-toggle,
-  .theme-toggle,
-  button[aria-label*="theme"],
-  button[aria-label*="Theme"],
-  button[aria-label*="dark"],
-  button[aria-label*="Dark"] {
-    display: inline-flex !important;
-  }
-
   /* =========================================================
-     Page width and layout
+     Page width
      ========================================================= */
 
   main,
@@ -91,10 +78,9 @@
 
   .home-section,
   section {
-    background: #FFFFFF !important;
+    background: #ffffff !important;
   }
 
-  /* Give content room for right bar on large screens */
   @media (min-width: 1200px) {
     .wg-about .article-style,
     .wg-about .prose,
@@ -102,7 +88,7 @@
     .article-style,
     .prose,
     article {
-      padding-right: 230px;
+      padding-right: 250px !important;
     }
   }
 
@@ -124,33 +110,37 @@
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5,
+  h6 {
     color: #000000 !important;
     letter-spacing: -0.02em;
   }
 
   h2 {
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.45rem;
-    margin-top: 2.4rem;
-    margin-bottom: 1.15rem;
+    border-bottom: 1px solid var(--border) !important;
+    padding-bottom: 0.45rem !important;
+    margin-top: 2.4rem !important;
+    margin-bottom: 1.15rem !important;
   }
 
   p,
-  li {
-    color: #000000;
+  li,
+  span,
+  div {
+    color: inherit;
   }
 
   .article-style p,
   .prose p,
   .markdown p {
-    line-height: 1.75;
+    line-height: 1.75 !important;
   }
 
   .article-style li,
   .prose li,
   .markdown li {
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.55rem !important;
   }
 
   /* =========================================================
@@ -162,10 +152,10 @@
   .article-style a,
   .markdown a {
     color: #000000 !important;
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 3px !important;
     background-image: none !important;
   }
 
@@ -174,7 +164,8 @@
   .article-style a:hover,
   .markdown a:hover {
     color: var(--hover) !important;
-    text-decoration-color: var(--hover);
+    text-decoration-color: var(--hover) !important;
+    background-image: none !important;
   }
 
   .gradient-underline,
@@ -189,32 +180,32 @@
 
   a[href$="CV_Wenwen_Guo.pdf"],
   a[href*="CV_Wenwen_Guo.pdf"] {
-    display: inline-block;
-    margin-top: 0.4rem;
-    padding: 0.65rem 1rem;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: #FFFFFF;
+    display: inline-block !important;
+    margin-top: 0.4rem !important;
+    padding: 0.65rem 1rem !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 999px !important;
+    background: #ffffff !important;
     color: #000000 !important;
-    font-weight: 700;
+    font-weight: 700 !important;
     text-decoration: none !important;
     transition:
       background 0.25s ease,
       color 0.25s ease,
       border-color 0.25s ease,
-      transform 0.25s ease;
+      transform 0.25s ease !important;
   }
 
   a[href$="CV_Wenwen_Guo.pdf"]:hover,
   a[href*="CV_Wenwen_Guo.pdf"]:hover {
-    background: var(--surface-alt);
+    background: var(--surface-alt) !important;
     color: var(--hover) !important;
-    border-color: #D1D5DB;
+    border-color: #d1d5db !important;
     transform: translateY(-1px);
   }
 
   /* =========================================================
-     Remove old template card feeling
+     Remove old card look
      ========================================================= */
 
   .section-card,
@@ -237,7 +228,7 @@
   }
 
   /* =========================================================
-     Profile block entrance: left to right
+     Profile block animation: left to right
      ========================================================= */
 
   #profile {
@@ -260,7 +251,7 @@
   }
 
   /* =========================================================
-     Scroll reveal for Markdown sections
+     Scroll reveal sections
      ========================================================= */
 
   .markdown-section-reveal {
@@ -282,71 +273,72 @@
   }
 
   .markdown-section-reveal h2 {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
   /* =========================================================
-     Right-side section navigation
+     Right-side navigation
      ========================================================= */
 
   #right-section-nav {
-    position: fixed;
-    right: 28px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 999;
-    width: 205px;
-    padding: 14px 12px;
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.94);
+    position: fixed !important;
+    right: 28px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 99999 !important;
+    width: 215px !important;
+    padding: 14px 12px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 16px !important;
+    background: rgba(255, 255, 255, 0.96) !important;
     backdrop-filter: blur(10px);
-    box-shadow: 0 12px 32px rgba(17, 24, 39, 0.08);
+    box-shadow: 0 12px 32px rgba(17, 24, 39, 0.08) !important;
+    display: block !important;
   }
 
   #right-section-nav .right-nav-title {
-    font-size: 0.78rem;
-    font-weight: 800;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 0.7rem;
+    font-size: 0.78rem !important;
+    font-weight: 800 !important;
+    color: var(--muted) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    margin-bottom: 0.7rem !important;
   }
 
   #right-section-nav .right-nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.25rem !important;
   }
 
   #right-section-nav a {
-    display: block;
-    padding: 0.52rem 0.7rem;
-    border-left: 2px solid transparent;
-    border-radius: 10px;
+    display: block !important;
+    padding: 0.52rem 0.7rem !important;
+    border-left: 2px solid transparent !important;
+    border-radius: 10px !important;
     color: #000000 !important;
     text-decoration: none !important;
-    font-size: 0.93rem;
-    font-weight: 700;
-    line-height: 1.35;
+    font-size: 0.93rem !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
     transition:
       background 0.22s ease,
       color 0.22s ease,
       border-color 0.22s ease,
-      transform 0.22s ease;
+      transform 0.22s ease !important;
   }
 
   #right-section-nav a:hover {
-    background: var(--surface-alt);
+    background: var(--surface-alt) !important;
     color: var(--hover) !important;
     transform: translateX(-2px);
   }
 
   #right-section-nav a.is-active {
-    background: var(--surface-alt);
+    background: var(--surface-alt) !important;
     color: #000000 !important;
-    border-left-color: #000000;
-    font-weight: 800;
+    border-left-color: #000000 !important;
+    font-weight: 800 !important;
   }
 
   @media (max-width: 1199px) {
@@ -361,9 +353,9 @@
 
   footer,
   .site-footer {
-    background: #FFFFFF !important;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
+    background: #ffffff !important;
+    border-top: 1px solid var(--border) !important;
+    color: var(--muted) !important;
   }
 
   /* =========================================================
@@ -407,20 +399,36 @@
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  /* =========================================================
-     1. Wrap each Markdown H2 section for scroll reveal
-     ========================================================= */
+(function () {
+  function slugify(text) {
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\u4e00-\u9fa5]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
 
-  const aboutWidget = document.querySelector(".wg-about");
-  const containers = aboutWidget
-    ? aboutWidget.querySelectorAll(".article-style, .prose, .markdown, article")
-    : document.querySelectorAll(".article-style, .prose, .markdown, article");
+  function getMainContainer() {
+    return (
+      document.querySelector(".wg-about .article-style") ||
+      document.querySelector(".wg-about .prose") ||
+      document.querySelector(".wg-about article") ||
+      document.querySelector(".article-style") ||
+      document.querySelector(".prose") ||
+      document.querySelector("article") ||
+      document.querySelector("main")
+    );
+  }
 
-  containers.forEach(function (container) {
-    const headings = Array.from(container.querySelectorAll("h2"));
+  function wrapMarkdownSections(container) {
+    if (!container) return [];
 
-    headings.forEach(function (heading) {
+    const headings = Array.from(container.querySelectorAll("h2")).filter(function (heading) {
+      return heading.textContent.trim().length > 0 &&
+             !heading.closest("#right-section-nav");
+    });
+
+    headings.forEach(function (heading, index) {
       if (heading.closest(".markdown-section-reveal")) return;
 
       const wrapper = document.createElement("section");
@@ -443,113 +451,141 @@ document.addEventListener("DOMContentLoaded", function () {
         wrapper.appendChild(current);
       }
     });
-  });
 
-  const revealItems = document.querySelectorAll(".markdown-section-reveal");
-
-  if (!("IntersectionObserver" in window)) {
-    revealItems.forEach(function (item) {
-      item.classList.add("is-visible");
+    return Array.from(container.querySelectorAll(".markdown-section-reveal")).filter(function (section) {
+      return section.querySelector("h2");
     });
-  } else {
-    const revealObserver = new IntersectionObserver(
+  }
+
+  function revealSections(sections) {
+    if (!sections.length) return;
+
+    if (!("IntersectionObserver" in window)) {
+      sections.forEach(function (section) {
+        section.classList.add("is-visible");
+      });
+      return;
+    }
+
+    const observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
+            observer.unobserve(entry.target);
           }
         });
       },
       {
-        threshold: 0.15,
+        threshold: 0.12,
         rootMargin: "0px 0px -80px 0px"
       }
     );
 
-    revealItems.forEach(function (item, index) {
-      item.style.transitionDelay = Math.min(index * 0.06, 0.3) + "s";
-      revealObserver.observe(item);
+    sections.forEach(function (section, index) {
+      section.style.transitionDelay = Math.min(index * 0.05, 0.25) + "s";
+      observer.observe(section);
     });
   }
 
-  /* =========================================================
-     2. Build right-side navigation from revealed sections
-     ========================================================= */
+  function buildRightNav(sections) {
+    const oldNav = document.getElementById("right-section-nav");
+    if (oldNav) oldNav.remove();
 
-  const oldNav = document.getElementById("right-section-nav");
-  if (oldNav) oldNav.remove();
+    if (!sections.length) return;
 
-  const sections = Array.from(document.querySelectorAll(".markdown-section-reveal"))
-    .filter(function (section) {
-      return section.querySelector("h2");
-    });
+    sections.forEach(function (section, index) {
+      const heading = section.querySelector("h2");
+      if (!heading) return;
 
-  if (!sections.length) return;
-
-  const nav = document.createElement("nav");
-  nav.id = "right-section-nav";
-  nav.setAttribute("aria-label", "Section navigation");
-  nav.innerHTML = `
-    <div class="right-nav-title">On this page</div>
-    <div class="right-nav-links"></div>
-  `;
-
-  const navLinksContainer = nav.querySelector(".right-nav-links");
-
-  sections.forEach(function (section, index) {
-    const heading = section.querySelector("h2");
-    if (!heading) return;
-
-    if (!section.id) {
-      section.id = "section-" + (index + 1);
-    }
-
-    const link = document.createElement("a");
-    link.href = "#" + section.id;
-    link.textContent = heading.textContent.trim();
-
-    navLinksContainer.appendChild(link);
-  });
-
-  document.body.appendChild(nav);
-
-  const links = Array.from(nav.querySelectorAll("a"));
-
-  function setActive(id) {
-    links.forEach(function (link) {
-      link.classList.toggle("is-active", link.getAttribute("href") === "#" + id);
-    });
-  }
-
-  if ("IntersectionObserver" in window) {
-    const navObserver = new IntersectionObserver(
-      function (entries) {
-        const visibleEntries = entries
-          .filter(function (entry) {
-            return entry.isIntersecting;
-          })
-          .sort(function (a, b) {
-            return b.intersectionRatio - a.intersectionRatio;
-          });
-
-        if (visibleEntries.length > 0) {
-          setActive(visibleEntries[0].target.id);
-        }
-      },
-      {
-        rootMargin: "-20% 0px -55% 0px",
-        threshold: [0.15, 0.3, 0.5, 0.75]
+      if (!section.id) {
+        section.id = (slugify(heading.textContent) || "section") + "-" + (index + 1);
       }
-    );
+    });
+
+    const nav = document.createElement("nav");
+    nav.id = "right-section-nav";
+    nav.setAttribute("aria-label", "Section navigation");
+
+    const title = document.createElement("div");
+    title.className = "right-nav-title";
+    title.textContent = "On this page";
+
+    const linksBox = document.createElement("div");
+    linksBox.className = "right-nav-links";
 
     sections.forEach(function (section) {
-      navObserver.observe(section);
+      const heading = section.querySelector("h2");
+      if (!heading) return;
+
+      const link = document.createElement("a");
+      link.href = "#" + section.id;
+      link.textContent = heading.textContent.trim();
+
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+        history.replaceState(null, "", "#" + section.id);
+        setActive(section.id);
+      });
+
+      linksBox.appendChild(link);
     });
+
+    nav.appendChild(title);
+    nav.appendChild(linksBox);
+    document.body.appendChild(nav);
+
+    const links = Array.from(nav.querySelectorAll("a"));
+
+    function setActive(id) {
+      links.forEach(function (link) {
+        link.classList.toggle("is-active", link.getAttribute("href") === "#" + id);
+      });
+    }
+
+    function updateActive() {
+      let activeSection = sections[0];
+
+      sections.forEach(function (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 180) {
+          activeSection = section;
+        }
+      });
+
+      if (activeSection) {
+        setActive(activeSection.id);
+      }
+    }
+
+    updateActive();
+
+    window.addEventListener("scroll", updateActive, { passive: true });
+    window.addEventListener("resize", updateActive);
   }
 
-  if (sections[0]) {
-    setActive(sections[0].id);
+  function init() {
+    const container = getMainContainer();
+    const sections = wrapMarkdownSections(container);
+
+    revealSections(sections);
+    buildRightNav(sections);
   }
-});
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      init();
+      setTimeout(init, 500);
+    });
+  } else {
+    init();
+    setTimeout(init, 500);
+  }
+})();
 </script>
